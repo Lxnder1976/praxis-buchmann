@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Praxis Dr. Buchmann - Website
 
-## Getting Started
+Eine moderne, responsive Website für die Hausarztpraxis Dr. Buchmann, entwickelt mit Next.js und Tailwind CSS.
 
-First, run the development server:
+## Features
 
+- 📱 Vollständig responsive Design
+- ⚡ Optimierte Performance mit Next.js
+- 🎨 Modernes Design mit Tailwind CSS
+- 🔒 TypeScript für Typsicherheit
+- 📧 Vorbereitet für Buchungssystem-Integration
+
+## Technologie-Stack
+
+- **Framework:** Next.js 15
+- **Styling:** Tailwind CSS
+- **Language:** TypeScript
+- **Deployment:** Azure Static Web Apps
+
+## Lokale Entwicklung
+
+1. Dependencies installieren:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Development Server starten:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Website im Browser öffnen: [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment auf Azure
 
-## Learn More
+Diese Website ist für das Deployment auf Azure Static Web Apps optimiert:
 
-To learn more about Next.js, take a look at the following resources:
+1. Repository auf GitHub pushen
+2. Azure Static Web App erstellen und mit GitHub Repository verbinden
+3. Build-Konfiguration:
+   - **App location:** `/`
+   - **Api location:** (leer lassen)
+   - **Output location:** `out`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Struktur
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── layout.tsx          # Layout-Komponente
+│   ├── page.tsx            # Hauptseite
+│   └── globals.css         # Globale Styles
+```
 
-## Deploy on Vercel
+## Geplante Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [ ] Online-Terminbuchung
+- [ ] Kontaktformular
+- [ ] Arzt-Vorstellung (Team-Seite)
+- [ ] Patienteninformationen
+- [ ] Notdienst-Informationen
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Anpassungen
+
+Die Website kann leicht angepasst werden:
+
+- **Kontaktdaten:** In `src/app/page.tsx` bearbeiten
+- **Farben:** Tailwind-Klassen in den Komponenten anpassen
+- **Inhalte:** Texte direkt in der `page.tsx` bearbeiten
+
+## Support
+
+Bei Fragen zur Website wenden Sie sich an den Entwickler.
