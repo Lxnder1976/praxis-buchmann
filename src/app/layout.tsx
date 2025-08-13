@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Praxis Dr. Buchmann - Ihre Gesundheit in besten Händen",
-  description: "Hausarztpraxis Dr. Buchmann - Umfassende medizinische Betreuung mit modernster Ausstattung. Termin online buchen.",
+  title: "Alexandra Buchmann - Osteopathie und funktionelle Medizin Wentorf",
+  description: "Praxis Alexandra Buchmann - Osteopathie und funktionelle Medizin in Wentorf. Ganzheitliche Behandlung für Ihre Gesundheit. Termin online buchen.",
 };
 
 export default function RootLayout({
