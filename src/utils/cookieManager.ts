@@ -40,7 +40,7 @@ export class CookieManager {
     document.head.appendChild(script);
 
     // gtag initialisieren
-    window.gtag = window.gtag || function(...args: any[]) {
+    window.gtag = window.gtag || function(...args: unknown[]) {
       (window.gtag.q = window.gtag.q || []).push(args);
     };
     window.gtag('js', new Date());
@@ -94,8 +94,8 @@ export class CookieManager {
 declare global {
   interface Window {
     gtag: {
-      (...args: any[]): void;
-      q?: any[];
+      (...args: unknown[]): void;
+      q?: unknown[];
     };
   }
 }

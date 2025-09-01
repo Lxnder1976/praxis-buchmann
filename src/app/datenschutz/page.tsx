@@ -37,7 +37,7 @@ export default function Datenschutz() {
                 
                 <h3 className="text-xl font-semibold text-burgundy mb-3 mt-6">Datenerfassung auf dieser Website</h3>
                 <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
-                <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.</p>
+                <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt &quot;Hinweis zur Verantwortlichen Stelle&quot; in dieser Datenschutzerklärung entnehmen.</p>
                 
                 <p className="mt-4"><strong>Wie erfassen wir Ihre Daten?</strong></p>
                 <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
@@ -49,7 +49,7 @@ export default function Datenschutz() {
                 <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
                 
                 <h3 className="text-xl font-semibold text-burgundy mb-3 mt-6">Microsoft Azure</h3>
-                <p>Diese Website wird bei Microsoft Azure gehostet. Anbieter ist die Microsoft Corporation, One Microsoft Way, Redmond, WA 98052-6399, USA (nachfolgend „Azure").</p>
+                <p>Diese Website wird bei Microsoft Azure gehostet. Anbieter ist die Microsoft Corporation, One Microsoft Way, Redmond, WA 98052-6399, USA (nachfolgend &quot;Azure&quot;).</p>
                 <p>Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern von Azure gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</p>
                 <p>Das Hosting bei Azure erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).</p>
                 <p>Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.</p>

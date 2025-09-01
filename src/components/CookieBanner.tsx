@@ -35,7 +35,7 @@ export default function CookieBanner() {
     setShowBanner(false);
   };
 
-  const saveSettings = (settings: any) => {
+  const saveSettings = (settings: Record<string, boolean>) => {
     localStorage.setItem('cookieConsent', JSON.stringify({
       ...settings,
       necessary: true, // Notwendige Cookies sind immer aktiv
@@ -102,7 +102,7 @@ export default function CookieBanner() {
   );
 }
 
-function CookieSettingsModal({ onClose, onSave }: { onClose: () => void; onSave: (settings: any) => void }) {
+function CookieSettingsModal({ onClose, onSave }: { onClose: () => void; onSave: (settings: Record<string, boolean>) => void }) {
   const [settings, setSettings] = useState({
     necessary: true,
     analytics: false,
