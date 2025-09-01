@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -28,18 +29,22 @@ export default function Header() {
         <div className="grid grid-cols-3 items-center h-full">
           {/* Alexandra Buchmann links */}
           <div className="flex justify-start">
-            <h1 className="text-2xl font-light text-burgundy">Alexandra Buchmann</h1>
+            <Link href="/" className="hover:text-coral transition-colors">
+              <h1 className="text-2xl font-light text-burgundy">Alexandra Buchmann</h1>
+            </Link>
           </div>
           
           {/* Zentrales Logo */}
           <div className="flex justify-center">
-            <Image
-              src="/logo.png"
-              alt="Logo Praxis Buchmann"
-              width={60}
-              height={60}
-              className="w-15 h-15 object-contain"
-            />
+            <Link href="/" className="hover:opacity-80 transition-opacity">
+              <Image
+                src="/logo.png"
+                alt="Logo Praxis Buchmann"
+                width={60}
+                height={60}
+                className="w-15 h-15 object-contain cursor-pointer"
+              />
+            </Link>
           </div>
           
           {/* Navigation rechts */}

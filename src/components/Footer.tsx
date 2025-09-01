@@ -80,9 +80,9 @@ export default function Footer() {
             <span>|</span>
             <a href="#kontakt" className="hover:text-burgundy">Kontakt</a>
             <span>|</span>
-            <a href="#" className="hover:text-burgundy">Impressum</a>
+            <a href="/impressum" className="hover:text-burgundy">Impressum</a>
             <span>|</span>
-            <a href="#" className="hover:text-burgundy">Datenschutz</a>
+            <a href="/datenschutz" className="hover:text-burgundy">Datenschutz</a>
           </div>
         </div>
       </div>
