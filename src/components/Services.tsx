@@ -8,9 +8,9 @@ export default function Services() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Health Check */}
-          <div className="service-card bg-new-cream p-8 rounded-lg">
-            <div className="w-12 h-12 bg-coral rounded-full mb-6"></div>
-            <h3 className="text-xl font-medium text-burgundy mb-2">Health Check</h3>
+          <div className="service-card bg-new-cream p-8 rounded-lg text-center">
+            <div className="w-12 h-12 bg-coral rounded-full mb-6 mx-auto"></div>
+            <h3 className="text-2xl font-medium text-burgundy mb-2">Health Check</h3>
             <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
               GANZHEITLICHE ANALYSE<br />
               FÜR EINEN KLAREN ÜBERBLICK
@@ -21,9 +21,9 @@ export default function Services() {
           </div>
           
           {/* Labordiagnostik */}
-          <div className="service-card bg-new-cream p-8 rounded-lg">
-            <div className="w-12 h-12 bg-yellow-700 rounded-full mb-6"></div>
-            <h3 className="text-xl font-medium text-burgundy mb-2">Labordiagnostik</h3>
+          <div className="service-card bg-new-cream p-8 rounded-lg text-center">
+            <div className="w-12 h-12 bg-yellow-700 rounded-full mb-6 mx-auto"></div>
+            <h3 className="text-2xl font-medium text-burgundy mb-2">Labordiagnostik</h3>
             <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
               FUNDIERTE WERTE.<br />
               KLARE ENTSCHEIDUNGEN.
@@ -34,9 +34,9 @@ export default function Services() {
           </div>
           
           {/* Nährstofftherapie */}
-          <div className="service-card bg-new-cream p-8 rounded-lg">
-            <div className="w-12 h-12 bg-burgundy rounded-full mb-6"></div>
-            <h3 className="text-xl font-medium text-burgundy mb-2">Nährstofftherapie</h3>
+          <div className="service-card bg-new-cream p-8 rounded-lg text-center">
+            <div className="w-12 h-12 bg-burgundy rounded-full mb-6 mx-auto"></div>
+            <h3 className="text-2xl font-medium text-burgundy mb-2">Nährstofftherapie</h3>
             <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
               GEZIELTE ENERGIE<br />
               VON INNEN.
@@ -47,9 +47,9 @@ export default function Services() {
           </div>
           
           {/* Kraniosakrale Osteopathie */}
-          <div className="service-card bg-new-cream p-8 rounded-lg">
-            <div className="w-12 h-12 bg-coral rounded-full mb-6"></div>
-            <h3 className="text-xl font-medium text-burgundy mb-2">Kraniosakrale Osteopathie</h3>
+          <div className="service-card bg-new-cream p-8 rounded-lg text-center">
+            <div className="w-12 h-12 bg-coral rounded-full mb-6 mx-auto"></div>
+            <h3 className="text-2xl font-medium text-burgundy mb-2">Kraniosakrale Osteopathie</h3>
             <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
               BLOCKADEN LÖSEN.<br />
               BALANCE FINDEN.
