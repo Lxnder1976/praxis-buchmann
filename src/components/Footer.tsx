@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Praxis-Galerie - 5 Bilder ohne Abstand, zentriert */}
         <div className="flex justify-center mb-12">
           <div className="flex">
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden hidden md:block">
               <Image
                 src="/01praxis.jpg"
                 alt="Die Praxis"
@@ -43,7 +43,7 @@ export default function Footer() {
                 className="w-56 h-72 object-cover"
               />
             </div>
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden hidden md:block">
               <Image
                 src="/05beratung_alexandra_buchmann.jpg"
                 alt="Beratung"
