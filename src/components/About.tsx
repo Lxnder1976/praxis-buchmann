@@ -1,0 +1,47 @@
+import Image from "next/image";
+
+export default function About() {
+  return (
+    <section id="ueber-mich" className="bg-new-cream section-padding">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Text links */}
+          <div className="space-y-6">
+            <h2 className="heading-secondary text-3xl lg:text-4xl text-burgundy">
+              Über mich
+            </h2>
+            
+            <div className="space-y-6">
+              <p className="body-text text-lg">
+                Mein Name ist Alexandra Buchmann, und als Heilpraktikerin ist es meine Leidenschaft, Menschen wie Sie auf ihrem Weg zu mehr Gesundheit und Lebensqualität zu begleiten. Mit meiner Erfahrung aus der Laboranalytik, meiner Ausbildung zur Heilpraktikerin und meiner mehrjährigen Expertise in der Osteopathie habe ich gelernt, den Körper als Ganzes zu betrachten.
+              </p>
+              
+              <p className="body-text text-lg">
+                Deshalb steht bei mir immer der Mensch im Mittelpunkt – mit all seinen individuellen Bedürfnissen und seiner einzigartigen Geschichte. Ich nehme mir die Zeit, die Ursachen Ihrer Beschwerden zu ergründen und ein ganz auf Sie zugeschnittenes Behandlungskonzept zu entwickeln. So schaffen wir gemeinsam eine Lösung, die nicht nur Symptome lindert, sondern Ihre Gesundheit nachhaltig stärkt.
+              </p>
+            </div>
+            
+            <button className="btn-burgundy">
+              KONTAKT
+            </button>
+          </div>
+          
+          {/* Bild rechts */}
+          <div className="relative">
+            <div className="relative overflow-hidden rounded-lg">
+              {/* Rosa Hintergrund-Element */}
+              <div className="absolute inset-0 bg-light-coral rounded-lg transform translate-x-4 translate-y-4 -z-10"></div>
+              <Image
+                src="/portrait_alexandra_buchmann.jpg"
+                alt="Portrait von Alexandra Buchmann"
+                width={500}
+                height={600}
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
