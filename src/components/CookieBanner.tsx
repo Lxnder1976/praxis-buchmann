@@ -67,22 +67,22 @@ export default function CookieBanner() {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 lg:flex-shrink-0 w-full sm:w-auto">
               <button
                 onClick={() => setShowSettings(true)}
-                className="px-4 py-2 text-sm border border-burgundy text-burgundy rounded hover:bg-burgundy hover:text-white transition-colors"
+                className="px-3 py-2 text-xs sm:text-sm border border-burgundy text-burgundy rounded hover:bg-burgundy hover:text-white transition-colors text-center whitespace-nowrap"
               >
                 Einstellungen
               </button>
               <button
                 onClick={acceptNecessary}
-                className="px-4 py-2 text-sm border border-burgundy text-burgundy rounded hover:bg-burgundy hover:text-white transition-colors"
+                className="px-3 py-2 text-xs sm:text-sm border border-burgundy text-burgundy rounded hover:bg-burgundy hover:text-white transition-colors text-center whitespace-nowrap"
               >
                 Nur Notwendige
               </button>
               <button
                 onClick={acceptAll}
-                className="px-6 py-2 text-sm bg-burgundy text-white rounded hover:bg-opacity-90 transition-colors"
+                className="px-4 py-2 text-xs sm:text-sm bg-burgundy text-white rounded hover:bg-opacity-90 transition-colors text-center whitespace-nowrap font-medium"
               >
                 Alle akzeptieren
               </button>
