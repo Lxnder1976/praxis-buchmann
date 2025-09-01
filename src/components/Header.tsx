@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.getElementById('navbar');
@@ -56,11 +58,55 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <div className="xl:hidden flex justify-end">
-            <button className="text-burgundy">
+            <button 
+              className="text-burgundy"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
+          </div>
+        </div>
+
+        {/* Mobile menu */}
+        <div className={`xl:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-new-cream border-t border-burgundy/20`}>
+          <div className="px-4 py-4 space-y-4">
+            <a 
+              href="#funktionelle-medizin" 
+              className="block text-burgundy hover:text-coral transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              FUNKTIONELLE MEDIZIN
+            </a>
+            <a 
+              href="#leistungen" 
+              className="block text-burgundy hover:text-coral transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              LEISTUNGEN
+            </a>
+            <a 
+              href="#ueber-mich" 
+              className="block text-burgundy hover:text-coral transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              ÜBER MICH
+            </a>
+            <a 
+              href="#kosten" 
+              className="block text-burgundy hover:text-coral transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              KOSTEN
+            </a>
+            <a 
+              href="#kontakt" 
+              className="block text-burgundy hover:text-coral transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              KONTAKT
+            </a>
           </div>
         </div>
       </nav>
