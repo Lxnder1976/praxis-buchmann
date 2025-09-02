@@ -24,11 +24,11 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="bg-new-cream sticky top-0 z-50 transition-shadow duration-300" id="navbar" style={{height: '100px'}}>
+    <header className="bg-new-cream sticky top-0 z-50 transition-shadow duration-300 h-[120px] md:h-[100px]" id="navbar">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="grid grid-cols-3 items-center h-full">
-          {/* Alexandra Buchmann Logo links */}
-          <div className="flex justify-start">
+          {/* Alexandra Buchmann Logo links - nur auf Desktop */}
+          <div className="hidden md:flex justify-start">
             <Link href="/" className="hover:opacity-80 transition-opacity">
               <Image
                 src="/alexandra_buchmann_logo.png"
@@ -40,15 +40,27 @@ export default function Header() {
             </Link>
           </div>
           
-          {/* Zentrales Logo */}
+          {/* Leerer Platz auf Mobile */}
+          <div className="md:hidden"></div>
+          
+          {/* Zentrales Logo - Responsive */}
           <div className="flex justify-center">
             <Link href="/" className="hover:opacity-80 transition-opacity">
+              {/* Desktop: Rundes Logo */}
               <Image
                 src="/logo.png"
                 alt="Logo Praxis Buchmann"
                 width={72}
                 height={72}
-                className="w-18 h-18 object-contain cursor-pointer"
+                className="hidden md:block w-18 h-18 object-contain cursor-pointer"
+              />
+              {/* Mobile: 2-zeiliges Logo */}
+              <Image
+                src="/Alexandra_Buchmann_Logo_2-zeilig_RGB.png"
+                alt="Alexandra Buchmann Logo"
+                width={180}
+                height={60}
+                className="block md:hidden h-32 w-auto object-contain cursor-pointer my-4"
               />
             </Link>
           </div>
