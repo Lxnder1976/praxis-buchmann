@@ -56,11 +56,11 @@ export default function Header() {
               />
               {/* Mobile: 2-zeiliges Logo */}
               <Image
-                src="/Alexandra_Buchmann_Logo_2-zeilig_RGB.png"
+                src="/Alexandra_Buchmann_Logo_RGB.png"
                 alt="Alexandra Buchmann Logo"
-                width={180}
-                height={60}
-                className="block md:hidden h-48 w-auto object-contain cursor-pointer -mt-4"
+                width={540}
+                height={180}
+                className="block md:hidden w-72 h-auto object-contain cursor-pointer max-w-none"
               />
             </Link>
           </div>
