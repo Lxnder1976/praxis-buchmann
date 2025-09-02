@@ -74,7 +74,7 @@ export default function Impressum() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-burgundy mb-4">Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+                <h2 className="text-2xl font-semibold text-burgundy mb-4">Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
                 <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
               </section>
 
