@@ -1,62 +1,70 @@
 export default function Services() {
   return (
-    <section id="leistungen" className="bg-burgundy section-padding">
+    <section id="leistungen" className="bg-coral section-padding">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="heading-secondary text-3xl lg:text-4xl text-white text-center mb-16">
+        <h2 className="heading-secondary text-3xl lg:text-4xl text-burgundy text-center mb-16">
           Leistungen
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Health Check */}
-          <div className="service-card bg-new-cream p-8 rounded-lg text-center">
-            <div className="w-12 h-12 bg-coral rounded-full mb-6 mx-auto"></div>
-            <h3 className="text-2xl font-medium text-burgundy mb-2">Health Check</h3>
-            <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
-              GANZHEITLICHE ANALYSE<br />
-              FÜR EINEN KLAREN ÜBERBLICK
-            </p>
-            <p className="body-text">
-              Mit moderner Diagnostik (BIA, EKG, HRV), ausführlicher Anamnese und einer umfangreichen Vitalparameter-Analyse entsteht ein persönliches Gesundheitsprofil. So lassen sich Risiken frühzeitig erkennen und die Basis für ein individuelles Therapiekonzept schaffen.
-            </p>
+          <div className="relative">
+            <div className="w-12 h-12 bg-burgundy rounded-full mx-auto relative -mb-6 z-10"></div>
+            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-80 flex flex-col">
+              <h3 className="text-2xl font-medium text-burgundy mb-2">Health Check</h3>
+              <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
+                GANZHEITLICHE ANALYSE<br />
+                FÜR EINEN KLAREN ÜBERBLICK
+              </p>
+              <p className="body-text flex-1">
+                Mit moderner Diagnostik (BIA, EKG, HRV), ausführlicher Anamnese und einer umfangreichen Vitalparameter-Analyse entsteht ein persönliches Gesundheitsprofil. So lassen sich Risiken frühzeitig erkennen und die Basis für ein individuelles Therapiekonzept schaffen.
+              </p>
+            </div>
           </div>
           
           {/* Labordiagnostik */}
-          <div className="service-card bg-new-cream p-8 rounded-lg text-center">
-            <div className="w-12 h-12 bg-yellow-700 rounded-full mb-6 mx-auto"></div>
-            <h3 className="text-2xl font-medium text-burgundy mb-2">Labordiagnostik</h3>
-            <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
-              FUNDIERTE WERTE.<br />
-              KLARE ENTSCHEIDUNGEN.
-            </p>
-            <p className="body-text">
-              Ob umfassendes Profil oder gezielte Nährstoffanalysen: Ihre Laborwerte bilden die Grundlage für eine präzise Behandlung und machen Fortschritte sichtbar. Durch die Auswahl spezifischer Parameter lassen sich Zusammenhänge erkennen und individuelle Schwerpunkte gezielt berücksichtigen.
-            </p>
+          <div className="relative">
+            <div className="w-12 h-12 bg-yellow-700 rounded-full mx-auto relative -mb-6 z-10"></div>
+            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-80 flex flex-col">
+              <h3 className="text-2xl font-medium text-burgundy mb-2">Labordiagnostik</h3>
+              <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
+                FUNDIERTE WERTE.<br />
+                KLARE ENTSCHEIDUNGEN.
+              </p>
+              <p className="body-text flex-1">
+                Ob umfassendes Profil oder gezielte Nährstoffanalysen: Ihre Laborwerte bilden die Grundlage für eine präzise Behandlung und machen Fortschritte sichtbar. Durch die Auswahl spezifischer Parameter lassen sich Zusammenhänge erkennen und individuelle Schwerpunkte gezielt berücksichtigen.
+              </p>
+            </div>
           </div>
           
           {/* Nährstofftherapie */}
-          <div className="service-card bg-new-cream p-8 rounded-lg text-center">
-            <div className="w-12 h-12 bg-burgundy rounded-full mb-6 mx-auto"></div>
-            <h3 className="text-2xl font-medium text-burgundy mb-2">Nährstofftherapie</h3>
-            <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
-              GEZIELTE ENERGIE<br />
-              VON INNEN.
-            </p>
-            <p className="body-text">
-              Individuelle Nährstoffkonzepte – auf Basis von Laborwerten und Ihren Bedürfnissen. Ziel ist es, fehlende Reserven aufzufüllen, die Speicher wieder ins Gleichgewicht zu bringen und so Energie, Immunsystem und Regeneration nachhaltig zu stärken.
-            </p>
+          <div className="relative">
+            <div className="w-12 h-12 bg-yellow-700 rounded-full mx-auto relative -mb-6 z-10"></div>
+            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-80 flex flex-col">
+              <h3 className="text-2xl font-medium text-burgundy mb-2">Nährstofftherapie</h3>
+              <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
+                GEZIELTE ENERGIE<br />
+                VON INNEN.
+              </p>
+              <p className="body-text flex-1">
+                Individuelle Nährstoffkonzepte – auf Basis von Laborwerten und Ihren Bedürfnissen. Ziel ist es, fehlende Reserven aufzufüllen, die Speicher wieder ins Gleichgewicht zu bringen und so Energie, Immunsystem und Regeneration nachhaltig zu stärken.
+              </p>
+            </div>
           </div>
           
           {/* Kraniosakrale Osteopathie */}
-          <div className="service-card bg-new-cream p-8 rounded-lg text-center">
-            <div className="w-12 h-12 bg-coral rounded-full mb-6 mx-auto"></div>
-            <h3 className="text-2xl font-medium text-burgundy mb-2">Kraniosakrale Osteopathie</h3>
-            <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
-              BLOCKADEN LÖSEN.<br />
-              BALANCE FINDEN.
-            </p>
-            <p className="body-text">
-              Sanfte manuelle Techniken stellen Beweglichkeit und Gleichgewicht wieder her. Ziel ist es, Funktionsstörungen zu beseitigen, Schmerzen zu lindern und die natürlichen Heilungsprozesse des Körpers zu fördern.
-            </p>
+          <div className="relative">
+            <div className="w-12 h-12 bg-burgundy rounded-full mx-auto relative -mb-6 z-10"></div>
+            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-80 flex flex-col">
+              <h3 className="text-2xl font-medium text-burgundy mb-2">Kraniosakrale Osteopathie</h3>
+              <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
+                BLOCKADEN LÖSEN.<br />
+                BALANCE FINDEN.
+              </p>
+              <p className="body-text flex-1">
+                Sanfte manuelle Techniken stellen Beweglichkeit und Gleichgewicht wieder her. Ziel ist es, Funktionsstörungen zu beseitigen, Schmerzen zu lindern und die natürlichen Heilungsprozesse des Körpers zu fördern.
+              </p>
+            </div>
           </div>
         </div>
       </div>

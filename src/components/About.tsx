@@ -5,8 +5,23 @@ export default function About() {
     <section id="ueber-mich" className="bg-new-cream section-padding">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text links */}
-          <div className="space-y-6">
+          {/* Bild links */}
+          <div className="relative">
+            <div className="relative overflow-hidden rounded-3xl">
+              {/* Background shape */}
+              <div className="absolute inset-0 bg-light-coral rounded-3xl transform translate-x-4 translate-y-4 -z-10"></div>
+              <Image
+                src="/portrait_alexandra_buchmann.jpg"
+                alt="Alexandra Buchmann"
+                width={400}
+                height={600}
+                className="w-full h-auto object-cover rounded-3xl"
+              />
+            </div>
+          </div>
+          
+          {/* Text rechts */}
+          <div className="space-y-6 text-center">
             <h2 className="heading-secondary text-3xl lg:text-4xl text-burgundy">
               Über mich
             </h2>
@@ -24,21 +39,6 @@ export default function About() {
             <button className="btn-burgundy">
               KONTAKT
             </button>
-          </div>
-          
-          {/* Bild rechts */}
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-lg">
-              {/* Rosa Hintergrund-Element */}
-              <div className="absolute inset-0 bg-light-coral rounded-lg transform translate-x-4 translate-y-4 -z-10"></div>
-              <Image
-                src="/portrait_alexandra_buchmann.jpg"
-                alt="Portrait von Alexandra Buchmann"
-                width={500}
-                height={600}
-                className="w-full h-auto object-cover rounded-lg"
-              />
-            </div>
           </div>
         </div>
       </div>

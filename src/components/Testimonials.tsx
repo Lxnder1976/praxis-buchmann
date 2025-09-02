@@ -1,41 +1,22 @@
 export default function Testimonials() {
   return (
-    <section className="bg-burgundy section-padding">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="space-y-16">
-          {/* Erstes Testimonial */}
-          <blockquote className="text-white">
-            <p className="text-lg lg:text-xl mb-6 leading-relaxed">
-              Alexandra Buchmann ist absolut verlässlich in der Zusammenarbeit und arbeitet sehr genau und einfühlsam. Sie hat tolle Fachkenntnisse und ein großes Herz bei ihrer Arbeit.
-            </p>
-            <cite className="text-sm text-gray-300 uppercase tracking-wider">
-              – MAX MUSTERMANN
-            </cite>
-          </blockquote>
-          
-          {/* Zweites Testimonial */}
-          <blockquote className="text-white">
-            <p className="text-lg lg:text-xl mb-6 leading-relaxed">
-              Es muss nicht immer alles so kompliziert sein! Alexandra Buchmann hat ein tolles Gespür dafür, genau zu erkennen worauf es ankommt und gemeinsam einen Weg zu gehen.
-            </p>
-            <cite className="text-sm text-gray-300 uppercase tracking-wider">
-              – PETRA PUSTERMANN
-            </cite>
-          </blockquote>
-        </div>
+    <section 
+      className="relative min-h-[600px] bg-left bg-no-repeat bg-contain flex items-center justify-center"
+      style={{
+        backgroundColor: '#f4f4f4',
+        backgroundImage: "url('/huefte_hand.jpg')"
+      }}
+    >
+      
+      {/* Zentriertes Zitat */}
+      <div className="flex items-center justify-center w-full h-full px-8 lg:px-16 py-16">
+        <blockquote className="text-burgundy text-center max-w-4xl">
+          <p className="heading-secondary text-2xl lg:text-4xl mb-8 leading-relaxed">
+            „Gesundheit entsteht im Einklang – wenn wir den Körper verstehen, können wir ihn stärken."
+          </p>
+        </blockquote>
       </div>
       
-      {/* Dekorative Linien */}
-      <div className="absolute top-0 left-0 w-64 h-64 opacity-20">
-        <svg viewBox="0 0 200 200" className="w-full h-full text-coral">
-          <path d="M 0,100 Q 100,0 200,100" stroke="currentColor" strokeWidth="2" fill="none"/>
-        </svg>
-      </div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 opacity-20">
-        <svg viewBox="0 0 200 200" className="w-full h-full text-coral">
-          <path d="M 0,100 Q 100,200 200,100" stroke="currentColor" strokeWidth="2" fill="none"/>
-        </svg>
-      </div>
     </section>
   );
 }

@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Bild links */}
           <div className="relative">
-            <div className="relative overflow-hidden rounded-lg">
+            <div className="relative overflow-hidden rounded-3xl">
               <Image
                 src="/hero.jpg"
                 alt="Alexandra Buchmann bei der Osteopathie-Behandlung"
@@ -20,7 +20,7 @@ export default function Hero() {
           </div>
           
           {/* Text rechts */}
-          <div className="space-y-6">
+          <div className="space-y-6 text-center">
             <h1 className="heading-primary text-4xl lg:text-5xl text-burgundy">
               Für mehr<br />
               Gesundheit und<br />
@@ -36,12 +36,7 @@ export default function Hero() {
         </div>
       </div>
       
-      {/* Dekorative rosa Linie */}
-      <div className="absolute top-0 right-0 w-64 h-64 opacity-20">
-        <svg viewBox="0 0 200 200" className="w-full h-full text-coral">
-          <path d="M 0,200 Q 100,100 200,200" stroke="currentColor" strokeWidth="2" fill="none"/>
-        </svg>
-      </div>
+      
     </section>
   );
 }
