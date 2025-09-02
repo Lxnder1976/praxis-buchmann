@@ -79,7 +79,7 @@ export default function Footer() {
                       alt={image.alt}
                       width={320}
                       height={400}
-                      className="w-full h-96 object-cover"
+                      className="w-full h-auto object-contain bg-white rounded-lg"
                     />
                   </div>
                 ))}
