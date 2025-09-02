@@ -55,16 +55,36 @@ export default function Footer() {
                 className="flex transition-transform duration-300 ease-in-out touch-pan-x"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                 onTouchStart={(e) => {
-                  const touchStart = e.touches[0].clientX;
-                  e.currentTarget.setAttribute('data-touch-start', touchStart.toString());
+                  const touch = e.touches[0];
+                  e.currentTarget.setAttribute('data-touch-start-x', touch.clientX.toString());
+                  e.currentTarget.setAttribute('data-touch-start-y', touch.clientY.toString());
+                }}
+                onTouchMove={(e) => {
+                  const touchStartX = parseFloat(e.currentTarget.getAttribute('data-touch-start-x') || '0');
+                  const touchStartY = parseFloat(e.currentTarget.getAttribute('data-touch-start-y') || '0');
+                  const touchCurrentX = e.touches[0].clientX;
+                  const touchCurrentY = e.touches[0].clientY;
+                  
+                  const deltaX = Math.abs(touchCurrentX - touchStartX);
+                  const deltaY = Math.abs(touchCurrentY - touchStartY);
+                  
+                  // Nur horizontale Bewegung verhindern, vertikale durchlassen
+                  if (deltaX > deltaY && deltaX > 10) {
+                    e.preventDefault(); // Verhindert Scrollen nur bei horizontaler Bewegung
+                  }
                 }}
                 onTouchEnd={(e) => {
-                  const touchStart = parseFloat(e.currentTarget.getAttribute('data-touch-start') || '0');
-                  const touchEnd = e.changedTouches[0].clientX;
-                  const diff = touchStart - touchEnd;
+                  const touchStartX = parseFloat(e.currentTarget.getAttribute('data-touch-start-x') || '0');
+                  const touchStartY = parseFloat(e.currentTarget.getAttribute('data-touch-start-y') || '0');
+                  const touchEndX = e.changedTouches[0].clientX;
+                  const touchEndY = e.changedTouches[0].clientY;
                   
-                  if (Math.abs(diff) > 50) { // Mindestens 50px swipe
-                    if (diff > 0) {
+                  const deltaX = touchStartX - touchEndX;
+                  const deltaY = Math.abs(touchStartY - touchEndY);
+                  
+                  // Nur als Swipe behandeln wenn horizontale Bewegung dominiert
+                  if (Math.abs(deltaX) > 50 && Math.abs(deltaX) > deltaY) {
+                    if (deltaX > 0) {
                       nextSlide(); // Swipe left = next
                     } else {
                       prevSlide(); // Swipe right = previous
