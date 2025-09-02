@@ -10,7 +10,7 @@ export default function Services() {
           {/* Health Check */}
           <div className="relative">
             <div className="w-12 h-12 bg-burgundy rounded-full mx-auto relative -mb-6 z-10"></div>
-            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-80 flex flex-col">
+            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-auto min-h-80 md:h-80 flex flex-col">
               <h3 className="text-2xl font-medium text-burgundy mb-2">Health Check</h3>
               <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                 GANZHEITLICHE ANALYSE<br />
@@ -25,7 +25,7 @@ export default function Services() {
           {/* Labordiagnostik */}
           <div className="relative">
             <div className="w-12 h-12 bg-yellow-700 rounded-full mx-auto relative -mb-6 z-10"></div>
-            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-80 flex flex-col">
+            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-auto min-h-80 md:h-80 flex flex-col">
               <h3 className="text-2xl font-medium text-burgundy mb-2">Labordiagnostik</h3>
               <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                 FUNDIERTE WERTE.<br />
@@ -40,7 +40,7 @@ export default function Services() {
           {/* Nährstofftherapie */}
           <div className="relative">
             <div className="w-12 h-12 bg-yellow-700 rounded-full mx-auto relative -mb-6 z-10"></div>
-            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-80 flex flex-col">
+            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-auto min-h-80 md:h-80 flex flex-col">
               <h3 className="text-2xl font-medium text-burgundy mb-2">Nährstofftherapie</h3>
               <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                 GEZIELTE ENERGIE<br />
@@ -55,7 +55,7 @@ export default function Services() {
           {/* Kraniosakrale Osteopathie */}
           <div className="relative">
             <div className="w-12 h-12 bg-burgundy rounded-full mx-auto relative -mb-6 z-10"></div>
-            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-80 flex flex-col">
+            <div className="service-card bg-white p-8 pt-12 rounded-3xl text-center h-auto min-h-80 md:h-80 flex flex-col">
               <h3 className="text-2xl font-medium text-burgundy mb-2">Kraniosakrale Osteopathie</h3>
               <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                 BLOCKADEN LÖSEN.<br />
