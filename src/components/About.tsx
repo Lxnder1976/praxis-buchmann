@@ -11,7 +11,7 @@ export default function About() {
               {/* Background shape */}
               <div className="absolute inset-0 bg-light-coral rounded-3xl transform translate-x-4 translate-y-4 -z-10"></div>
               <Image
-                src="/portrait_alexandra_buchmann.jpg"
+                src="/portrait_alexandra.png"
                 alt="Alexandra Buchmann"
                 width={400}
                 height={600}

@@ -18,8 +18,8 @@ export default function FunktionelleMedizin() {
         
         {/* Weiße Content-Box - absolut positioniert über beide Bereiche */}
         <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-full max-w-5xl px-4 z-20">
-          <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-12 mx-auto max-w-4xl">
-            <h2 className="heading-secondary text-3xl lg:text-4xl text-burgundy text-center mb-8">
+          <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-12 mx-auto max-w-4xl text-center">
+            <h2 className="heading-secondary text-3xl lg:text-4xl text-burgundy mb-8">
               Funktionelle Medizin
             </h2>
             

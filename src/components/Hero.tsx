@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl">
               <Image
-                src="/hero.jpg"
+                src="/hero_alexandra.png"
                 alt="Alexandra Buchmann bei der Osteopathie-Behandlung"
                 width={600}
                 height={700}

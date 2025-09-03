@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Services() {
   return (
     <section id="leistungen" className="bg-contact section-padding">
@@ -9,7 +11,15 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-y-12 md:grid-rows-2">
           {/* Health Check */}
           <div className="relative">
-            <div className="w-12 h-12 bg-burgundy rounded-full mx-auto relative -mb-6 z-10"></div>
+            <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
+              <Image
+                src="/Perle_burgund.png"
+                alt="Burgundy Perle"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain"
+              />
+            </div>
             <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
               <h3 className="text-2xl font-medium text-burgundy mb-2">Health Check</h3>
               <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
@@ -24,7 +34,15 @@ export default function Services() {
           
           {/* Labordiagnostik */}
           <div className="relative">
-            <div className="w-12 h-12 bg-yellow-700 rounded-full mx-auto relative -mb-6 z-10"></div>
+            <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
+              <Image
+                src="/Perle_gold.png"
+                alt="Gold Perle"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain"
+              />
+            </div>
             <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
               <h3 className="text-2xl font-medium text-burgundy mb-2">Labordiagnostik</h3>
               <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
@@ -39,7 +57,15 @@ export default function Services() {
           
           {/* Nährstofftherapie */}
           <div className="relative">
-            <div className="w-12 h-12 bg-yellow-700 rounded-full mx-auto relative -mb-6 z-10"></div>
+            <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
+              <Image
+                src="/Perle_gold.png"
+                alt="Gold Perle"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain"
+              />
+            </div>
             <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
               <h3 className="text-2xl font-medium text-burgundy mb-2">Nährstofftherapie</h3>
               <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
@@ -54,7 +80,15 @@ export default function Services() {
           
           {/* Kraniosakrale Osteopathie */}
           <div className="relative">
-            <div className="w-12 h-12 bg-burgundy rounded-full mx-auto relative -mb-6 z-10"></div>
+            <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
+              <Image
+                src="/Perle_burgund.png"
+                alt="Burgundy Perle"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain"
+              />
+            </div>
             <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
               <h3 className="text-2xl font-medium text-burgundy mb-2">Kraniosakrale Osteopathie</h3>
               <p className="text-sm text-burgundy uppercase tracking-wider mb-4">

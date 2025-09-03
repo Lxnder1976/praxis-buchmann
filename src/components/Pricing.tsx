@@ -57,7 +57,7 @@ export default function Pricing() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl">
               <Image
-                src="/beratung.jpg"
+                src="/beratung_alexandra.png"
                 alt="Beratungsgespräch in der Praxis"
                 width={600}
                 height={500}
