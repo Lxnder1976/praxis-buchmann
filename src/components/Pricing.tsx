@@ -19,29 +19,35 @@ export default function Pricing() {
             <div className="bg-white p-6 rounded-3xl">
               <h3 className="text-xl font-medium text-burgundy mb-4">Behandlungskosten</h3>
               <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span className="body-text">Craniosakrale Osteopathie (60 Min.)</span>
-                  <span className="font-medium">120,00 €</span>
+                <div className="flex justify-between items-start">
+                  <span className="body-text text-left">
+                    Craniosakrale Osteopathie <span className="hidden md:inline">(60 Min.)</span>
+                  </span>
+                  <span className="font-medium whitespace-nowrap">120,00&nbsp;€</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="body-text">Health Check (Anamnese, BIA, EKG/HRV, Vitalparameter)</span>
-                  <span className="font-medium">280,00 €</span>
+                <div className="flex justify-between items-start">
+                  <span className="body-text text-left">
+                    Health Check <span className="hidden md:inline">(Anamnese, BIA, EKG/HRV, Vitalparameter)</span>
+                  </span>
+                  <span className="font-medium whitespace-nowrap">280,00&nbsp;€</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="body-text">Health Check + Labordiagnostik</span>
-                  <span className="font-medium">350,00 €</span>
+                <div className="flex justify-between items-start">
+                  <span className="body-text text-left">Health Check + Labordiagnostik</span>
+                  <span className="font-medium whitespace-nowrap">350,00&nbsp;€</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="body-text">Nährstofftherapie (Anamnese, Analyse, Therapieplan)</span>
-                  <span className="font-medium">180,00 €</span>
+                <div className="flex justify-between items-start">
+                  <span className="body-text text-left">
+                    Nährstofftherapie <span className="hidden md:inline">(Anamnese, Analyse, Therapieplan)</span>
+                  </span>
+                  <span className="font-medium whitespace-nowrap">180,00&nbsp;€</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="body-text">Nährstofftherapie + Labordiagnostik</span>
-                  <span className="font-medium">250,00 €</span>
+                <div className="flex justify-between items-start">
+                  <span className="body-text text-left">Nährstofftherapie + Labordiagnostik</span>
+                  <span className="font-medium whitespace-nowrap">250,00&nbsp;€</span>
                 </div>
               </div>
               
-              <p className="body-text text-sm mt-4">
+              <p className="body-text text-xs mt-4 text-gray-600">
                 *Alle Preise verstehen sich als Selbstzahlerleistungen. Eine Kostenerstattung durch die Krankenversicherung ist je nach Tarif möglich.
               </p>
             </div>
