@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Krub, Gupter } from "next/font/google";
+import { Geist, Geist_Mono, Krub, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
 
@@ -19,10 +19,10 @@ const krub = Krub({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const gupter = Gupter({
-  variable: "--font-gupter",
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair-display",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${krub.variable} ${gupter.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${krub.variable} ${playfairDisplay.variable} antialiased`}
       >
         {children}
         <CookieBanner />

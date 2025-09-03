@@ -2,11 +2,11 @@ export default function Contact() {
   return (
     <section className="bg-contact section-padding">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="heading-secondary text-3xl lg:text-4xl text-white mb-8">
+        <h2 className="heading-secondary text-3xl lg:text-4xl text-burgundy mb-8">
           Kommen Sie vorbei!
         </h2>
         
-        <p className="text-white text-lg mb-12 leading-relaxed">
+        <p className="text-burgundy text-lg mb-12 leading-relaxed">
           Gerne bespreche ich mit Ihnen in einem unverbindlichen Gespräch, wie ich Sie auf Ihrem Weg zu mehr Gesundheit und Lebensqualität unterstützen kann. Rufen Sie mich an, schreiben Sie mich gerne persönlich an oder buchen Sie direkt einen Termin online.
         </p>
         
