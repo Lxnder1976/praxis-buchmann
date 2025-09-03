@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Pricing() {
   return (
-    <section id="kosten" className="bg-new-cream section-padding">
+    <section id="preise" className="bg-new-cream section-padding">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text links */}
           <div className="space-y-8 text-center">
             <h2 className="heading-secondary text-3xl lg:text-4xl text-burgundy">
-              Ablauf und Kosten
+              Ablauf und Preise
             </h2>
             
             <p className="body-text text-lg">
@@ -17,7 +17,7 @@ export default function Pricing() {
             
             {/* Preistabelle */}
             <div className="bg-white p-6 rounded-3xl">
-              <h3 className="text-xl font-medium text-burgundy mb-4">Behandlungskosten</h3>
+              <h3 className="text-xl font-medium text-burgundy mb-4">Behandlungspreise</h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-start">
                   <span className="body-text text-left">

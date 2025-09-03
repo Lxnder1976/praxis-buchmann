@@ -70,7 +70,7 @@ export default function Header() {
             <a href="#funktionelle-medizin" className="text-xs text-burgundy hover:text-coral transition-colors whitespace-nowrap">FUNKTIONELLE MEDIZIN</a>
             <a href="#leistungen" className="text-xs text-burgundy hover:text-coral transition-colors whitespace-nowrap">LEISTUNGEN</a>
             <a href="#ueber-mich" className="text-xs text-burgundy hover:text-coral transition-colors whitespace-nowrap">ÜBER MICH</a>
-            <a href="#kosten" className="text-xs text-burgundy hover:text-coral transition-colors whitespace-nowrap">KOSTEN</a>
+            <a href="#preise" className="text-xs text-burgundy hover:text-coral transition-colors whitespace-nowrap">PREISE</a>
             <a href="#kontakt" className="text-xs text-burgundy hover:text-coral transition-colors whitespace-nowrap">KONTAKT</a>
             <div className="w-5 h-5 text-coral ml-4">
               <svg fill="currentColor" viewBox="0 0 24 24">
@@ -117,11 +117,11 @@ export default function Header() {
               ÜBER MICH
             </a>
             <a 
-              href="#kosten" 
+              href="#preise" 
               className="block text-burgundy hover:text-coral transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              KOSTEN
+              PREISE
             </a>
             <a 
               href="#kontakt" 
