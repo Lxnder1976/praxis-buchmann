@@ -39,6 +39,52 @@ export default function Contact() {
             TERMIN BUCHEN
           </a>
         </div>
+        
+        {/* Anfahrt & Parking Information */}
+        <div className="mt-16 pt-8 border-t border-burgundy/20">
+          <h3 className="heading-secondary text-2xl text-burgundy mb-8">
+            Anfahrt & Parken
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            {/* Anfahrt */}
+            <div className="space-y-4 text-center">
+              <h4 className="text-lg font-medium text-burgundy">Anfahrt</h4>
+              <div className="body-text text-center">
+                <p className="mb-2">
+                  <strong>Zwischen den Toren 3</strong><br />
+                  21465 Wentorf<br />
+                  2. Stock (Zugang barrierefrei)
+                </p>
+                <p className="text-sm text-burgundy/80">
+                  Die Praxis ist bequem mit dem Auto oder öffentlichen Verkehrsmitteln erreichbar.
+                </p>
+              </div>
+            </div>
+            
+            {/* Parkplätze */}
+            <div className="space-y-4 text-center">
+              <h4 className="text-lg font-medium text-burgundy">Parkplätze</h4>
+              <div className="body-text text-center">
+                <p className="mb-2">
+                  Kostenfreie Parkplätze stehen Ihnen zur Verfügung.
+                </p>
+                <p className="text-sm text-burgundy/80">
+                  Sie können gerne die Parkplätze der{" "}
+                  <a 
+                    href="https://www.praxissommerfeld.de/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-burgundy hover:text-coral underline transition-colors font-medium"
+                  >
+                    Praxis Sommerfeld
+                  </a>{" "}
+                  mitnutzen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
