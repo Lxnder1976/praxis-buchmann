@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="bg-contact section-padding">
+    <section id="kontakt" className="bg-contact section-padding">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="heading-secondary text-3xl lg:text-4xl text-burgundy mb-8">
           Kommen Sie vorbei!
