@@ -29,9 +29,14 @@ export default function Hero() {
             <p className="body-text text-lg">
               Es ist mir eine Freude, Sie in meiner Praxis für funktionelle Medizin und Osteopathie in Wentorf bei Hamburg zu begrüßen.
             </p>
-            <button className="btn-burgundy">
+            <a 
+              href="https://www.appointmed.com/booking/2399598-alexandra-buchmann"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-burgundy inline-block"
+            >
               TERMIN BUCHEN
-            </button>
+            </a>
           </div>
         </div>
       </div>

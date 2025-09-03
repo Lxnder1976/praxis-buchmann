@@ -33,7 +33,7 @@ export default function Contact() {
             WHATSAPP
           </a>
           <a 
-            href="#"
+            href="https://www.appointmed.com/booking/2399598-alexandra-buchmann"
             className="btn-outline-burgundy"
           >
             TERMIN BUCHEN
