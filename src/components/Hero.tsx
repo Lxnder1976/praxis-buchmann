@@ -30,7 +30,7 @@ export default function Hero() {
               Es ist mir eine Freude, Sie in meiner Praxis für funktionelle Medizin und Osteopathie in Wentorf bei Hamburg zu begrüßen.
             </p>
             <button className="btn-burgundy">
-              MEHR ERFAHREN
+              TERMIN BUCHEN
             </button>
           </div>
         </div>

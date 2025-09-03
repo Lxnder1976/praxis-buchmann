@@ -36,9 +36,9 @@ export default function About() {
               </p>
             </div>
             
-            <button className="btn-burgundy">
+            <a href="#kontakt" className="btn-burgundy inline-block">
               KONTAKT
-            </button>
+            </a>
           </div>
         </div>
       </div>
