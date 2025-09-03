@@ -15,11 +15,15 @@ export default function Footer() {
   ];
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length);
+    // Für Tablet: maximal bis Position 2 (zeigt Bilder 3,4,5)
+    // Für Mobile: alle 5 Bilder durchgehen
+    const maxSlides = window.innerWidth >= 768 && window.innerWidth < 1024 ? 2 : images.length - 1;
+    setCurrentSlide((prev) => (prev + 1) % (maxSlides + 1));
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+    const maxSlides = window.innerWidth >= 768 && window.innerWidth < 1024 ? 2 : images.length - 1;
+    setCurrentSlide((prev) => (prev - 1 + maxSlides + 1) % (maxSlides + 1));
   };
 
   const goToSlide = (index: number) => {
@@ -30,7 +34,7 @@ export default function Footer() {
     <footer id="kontakt" className="bg-new-cream section-padding">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Desktop: 5 Bilder nebeneinander */}
-        <div className="hidden md:flex justify-center mb-12">
+        <div className="hidden lg:flex justify-center mb-12">
           <div className="flex">
             {images.map((image, index) => (
               <div key={index} className="relative overflow-hidden">
@@ -43,6 +47,63 @@ export default function Footer() {
                 />
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Tablet: 3 Bilder Slideshow */}
+        <div className="hidden md:block lg:hidden mb-12">
+          <div className="relative max-w-4xl mx-auto">
+            <div className="relative overflow-hidden rounded-lg">
+              <div 
+                className="flex transition-transform duration-300 ease-in-out"
+                style={{ transform: `translateX(-${currentSlide * (100/3)}%)` }}
+              >
+                {images.map((image, index) => (
+                  <div key={index} className="w-1/3 flex-shrink-0 px-2">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={280}
+                      height={350}
+                      className="w-full h-auto object-contain bg-white rounded-lg"
+                    />
+                  </div>
+                ))}
+              </div>
+              
+              {/* Navigation Buttons für Tablet */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-burgundy rounded-full p-3 shadow-lg transition-all"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={nextSlide}
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-burgundy rounded-full p-3 shadow-lg transition-all"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+            
+            {/* Indicator Dots für Tablet */}
+            <div className="flex justify-center mt-4 space-x-2">
+              {[0, 1, 2].map((index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                    index === currentSlide 
+                      ? 'bg-burgundy scale-110 shadow-lg' 
+                      : 'bg-burgundy/60 hover:bg-burgundy/80 border border-burgundy/30'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
 
