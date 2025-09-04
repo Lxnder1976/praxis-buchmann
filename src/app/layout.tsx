@@ -1,29 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Krub, Playfair_Display } from "next/font/google";
+import { Krub, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import AsyncCSS from "@/components/AsyncCSS";
 
 const krub = Krub({
   variable: "--font-krub",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -38,10 +31,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <GoogleAnalytics />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${krub.variable} ${playfairDisplay.variable} antialiased`}
+        className={`${krub.variable} ${playfairDisplay.variable} antialiased`}
       >
+        <AsyncCSS />
         {children}
         <CookieBanner />
       </body>

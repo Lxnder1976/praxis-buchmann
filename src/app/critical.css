@@ -1,6 +1,4 @@
-@import "tailwindcss";
-
-/* Critical CSS inline - loads immediately */
+/* Critical CSS - Above the fold content only */
 :root {
   --burgundy: #5b1a2c;
   --coral: #E76F73;
@@ -15,14 +13,7 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-krub: var(--font-krub);
-  --font-playfair-display: var(--font-playfair-display);
-}
-
-/* Critical above-the-fold styles only */
+/* Essential layout styles */
 body {
   background: var(--background);
   color: var(--foreground);
@@ -31,10 +22,20 @@ body {
   padding: 0;
 }
 
-.bg-burgundy { background-color: var(--burgundy); }
-.bg-new-cream { background-color: var(--new-cream); }
-.text-burgundy { color: var(--burgundy); }
+/* Critical utility classes for hero section */
+.bg-burgundy {
+  background-color: var(--burgundy);
+}
 
+.bg-new-cream {
+  background-color: var(--new-cream);
+}
+
+.text-burgundy {
+  color: var(--burgundy);
+}
+
+/* Critical typography for hero */
 .heading-primary {
   font-family: var(--font-playfair-display), serif;
   font-weight: 400;
@@ -47,6 +48,7 @@ body {
   color: var(--burgundy);
 }
 
+/* Critical button styles */
 .btn-burgundy {
   background-color: var(--burgundy);
   color: white;
@@ -60,7 +62,15 @@ body {
   text-decoration: none;
 }
 
+/* Essential spacing */
 .section-padding {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+/* Font display optimization */
+@font-face {
+  font-family: fallback;
+  src: local('Arial');
+  font-display: swap;
 }
