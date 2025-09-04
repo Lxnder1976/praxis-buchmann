@@ -53,6 +53,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-burgundy inline-block"
+              aria-label="Termin buchen (öffnet in neuem Fenster)"
             >
               TERMIN BUCHEN
             </a>
