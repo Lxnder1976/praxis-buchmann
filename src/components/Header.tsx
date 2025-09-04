@@ -106,7 +106,7 @@ export default function Header() {
         {/* Mobile menu */}
         <div 
           id="mobile-menu"
-          className={`xl:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-new-cream border-t border-burgundy/20`}
+          className={`xl:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-new-cream border-t border-burgundy/20 shadow-lg animate-slideDown`}
           role="navigation"
           aria-label="Mobile Navigation"
         >
