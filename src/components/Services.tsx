@@ -87,7 +87,7 @@ export default function Services() {
             </div>
           </FadeIn>
           
-          {/* Kraniosakrale Osteopathie */}
+          {/* Craniosakrale Osteopathie */}
           <FadeIn direction="up" delay={250} duration={600}>
             <div className="relative">
               <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
@@ -100,7 +100,7 @@ export default function Services() {
                 />
               </div>
               <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
-                <h3 className="text-2xl font-medium text-burgundy mb-2">Kraniosakrale Osteopathie</h3>
+                <h3 className="text-2xl font-medium text-burgundy mb-2">Craniosakrale Osteopathie</h3>
                 <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                   BLOCKADEN LÖSEN.<br />
                   BALANCE FINDEN.
