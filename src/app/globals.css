@@ -104,3 +104,15 @@ body {
 .animate-slideDown {
   animation: slideDown 0.3s ease-out;
 }
+
+/* Scroll offset for anchor links to account for sticky header */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 160px; /* Mobile header height + some padding */
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 120px; /* Desktop header height + some padding */
+  }
+}
