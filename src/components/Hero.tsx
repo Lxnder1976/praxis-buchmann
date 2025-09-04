@@ -8,12 +8,23 @@ export default function Hero() {
           {/* Bild links */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl">
+              {/* Desktop Image */}
               <Image
                 src="/hero_alexandra.png"
                 alt="Alexandra Buchmann bei der Osteopathie-Behandlung"
                 width={600}
                 height={700}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover hidden sm:block"
+                priority
+                fetchPriority="high"
+              />
+              {/* Mobile Image */}
+              <Image
+                src="/hero_alexandra_mobile.png"
+                alt="Alexandra Buchmann bei der Osteopathie-Behandlung"
+                width={400}
+                height={500}
+                className="w-full h-auto object-cover block sm:hidden"
                 priority
                 fetchPriority="high"
               />
