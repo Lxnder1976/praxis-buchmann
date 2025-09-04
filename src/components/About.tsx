@@ -10,13 +10,30 @@ export default function About() {
             <div className="relative overflow-hidden rounded-3xl">
               {/* Background shape */}
               <div className="absolute inset-0 bg-light-coral rounded-3xl transform translate-x-4 translate-y-4 -z-10"></div>
-              <Image
-                src="/portrait_alexandra.png"
-                alt="Alexandra Buchmann"
-                width={400}
-                height={600}
-                className="w-full h-auto object-cover rounded-3xl"
-              />
+              
+              {/* Responsive Portrait with WebP */}
+              <picture>
+                {/* Mobile WebP */}
+                <source 
+                  srcSet="/portrait_alexandra_mobile.webp" 
+                  type="image/webp" 
+                  media="(max-width: 640px)" 
+                />
+                {/* Desktop WebP */}
+                <source 
+                  srcSet="/portrait_alexandra.webp" 
+                  type="image/webp" 
+                  media="(min-width: 641px)" 
+                />
+                {/* PNG Fallback */}
+                <Image
+                  src="/portrait_alexandra.png"
+                  alt="Alexandra Buchmann"
+                  width={400}
+                  height={600}
+                  className="w-full h-auto object-cover rounded-3xl"
+                />
+              </picture>
             </div>
           </div>
           

@@ -47,21 +47,29 @@ export default function Header() {
           <div className="flex justify-center">
             <Link href="/" className="hover:opacity-80 transition-opacity">
               {/* Desktop: Rundes Logo */}
-              <Image
-                src="/logo.png"
-                alt="Logo Praxis Buchmann"
-                width={72}
-                height={72}
-                className="hidden md:block w-18 h-18 object-contain cursor-pointer"
-              />
-              {/* Mobile: 2-zeiliges Logo */}
-              <Image
-                src="/Alexandra_Buchmann_Logo_RGB.png"
-                alt="Alexandra Buchmann Logo"
-                width={540}
-                height={180}
-                className="block md:hidden w-72 h-auto object-contain cursor-pointer max-w-none"
-              />
+              {/* Desktop Logo */}
+              <picture className="hidden md:block">
+                <source srcSet="/logo.webp" type="image/webp" />
+                <Image
+                  src="/logo.png"
+                  alt="Logo Praxis Buchmann"
+                  width={72}
+                  height={72}
+                  className="w-18 h-18 object-contain cursor-pointer"
+                />
+              </picture>
+              
+              {/* Mobile Logo - WebP with PNG fallback */}
+              <picture className="block md:hidden">
+                <source srcSet="/Alexandra_Buchmann_Logo_RGB.webp" type="image/webp" />
+                <Image
+                  src="/Alexandra_Buchmann_Logo_RGB.png"
+                  alt="Alexandra Buchmann Logo"
+                  width={540}
+                  height={180}
+                  className="w-72 h-auto object-contain cursor-pointer max-w-none"
+                />
+              </picture>
             </Link>
           </div>
           
