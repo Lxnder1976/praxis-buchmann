@@ -33,9 +33,9 @@ export default function Header() {
               <Image
                 src="/alexandra_buchmann_logo.png"
                 alt="Alexandra Buchmann Logo"
-                width={180}
-                height={40}
-                className="h-10 w-auto object-contain cursor-pointer"
+                width={220}
+                height={50}
+                className="h-12 w-auto object-contain cursor-pointer"
               />
             </Link>
           </div>

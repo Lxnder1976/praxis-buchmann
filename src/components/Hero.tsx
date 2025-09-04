@@ -3,7 +3,7 @@ import FadeIn from "./FadeIn";
 
 export default function Hero() {
   return (
-    <section className="bg-new-cream section-padding">
+    <section className="bg-new-cream pt-8 pb-20 md:pt-12 md:pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Bild links */}
