@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/',  // Mit Slash für SEO-Sauberkeit
     '/datenschutz', 
     '/impressum',
+    '/agb',
   ];
 
   const staticSitemapEntries: MetadataRoute.Sitemap = staticPages.map(page => ({
