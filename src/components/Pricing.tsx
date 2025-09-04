@@ -56,13 +56,29 @@ export default function Pricing() {
           {/* Bild rechts */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl">
-              <Image
-                src="/beratung_alexandra.png"
-                alt="Beratungsgespräch in der Praxis"
-                width={600}
-                height={500}
-                className="w-full h-auto object-cover"
-              />
+              {/* Responsive Beratung Image with WebP */}
+              <picture>
+                {/* Mobile WebP (smaller size for mobile) */}
+                <source 
+                  srcSet="/beratung_alexandra_mobile.webp" 
+                  type="image/webp" 
+                  media="(max-width: 640px)" 
+                />
+                {/* Desktop WebP */}
+                <source 
+                  srcSet="/beratung_alexandra.webp" 
+                  type="image/webp" 
+                  media="(min-width: 641px)" 
+                />
+                {/* PNG Fallback */}
+                <Image
+                  src="/beratung_alexandra.png"
+                  alt="Beratungsgespräch in der Praxis"
+                  width={600}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                />
+              </picture>
             </div>
           </div>
         </div>
