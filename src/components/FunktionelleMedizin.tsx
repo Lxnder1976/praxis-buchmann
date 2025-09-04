@@ -12,7 +12,7 @@ export default function FunktionelleMedizin() {
           className="relative min-h-[500px] bg-right bg-no-repeat bg-contain"
           style={{
             backgroundColor: '#f8f8f8',
-            backgroundImage: "url('/limetten.png')"
+            backgroundImage: `url('/limetten.webp'), url('/limetten.png')`
           }}
         ></div>
         
