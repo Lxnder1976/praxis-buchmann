@@ -15,7 +15,7 @@ export default function Services() {
           {/* Health Check */}
           <FadeIn direction="up" delay={100} duration={600}>
             <div className="relative">
-              <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
+              <div className="w-12 h-12 mx-auto relative -mb-6 z-10 perle-pulse">
                 <Image
                   src="/Perle_burgund.png"
                   alt="Burgundy Perle"
