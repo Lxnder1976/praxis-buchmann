@@ -34,6 +34,83 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* JSON-LD Schema für SEO und KI-Agenten */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["MedicalClinic", "LocalBusiness"],
+            "@id": "https://praxis-buchmann.info/#praxis",
+            "name": "Praxis Buchmann – Funktionelle Medizin & Osteopathie",
+            "url": "https://praxis-buchmann.info/",
+            "image": "https://praxis-buchmann.info/portrait_alexandra.webp",
+            "logo": "https://praxis-buchmann.info/Alexandra_Buchmann_Logo_RGB.webp",
+            "description": "Heilpraktikerin Alexandra Buchmann verbindet Labormedizin mit einem ganzheitlichen Ansatz: funktionelle Medizin, craniosakrale Osteopathie und personalisierte Nährstofftherapie – für mehr Gesundheit, Energie und Lebensqualität in Wentorf bei Hamburg.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Zwischen den Toren 3",
+              "postalCode": "21465",
+              "addressLocality": "Wentorf bei Hamburg",
+              "addressCountry": "DE"
+            },
+            "hasMap": "https://www.google.com/maps?q=Zwischen+den+Toren+3,+21465+Wentorf+bei+Hamburg",
+            "areaServed": ["Wentorf bei Hamburg", "Reinbek", "Hamburg-Bergedorf"],
+            "priceRange": "$$",
+            "knowsAbout": [
+              "Funktionelle Medizin",
+              "Osteopathie",
+              "Craniosakrale Osteopathie",
+              "Nährstofftherapie",
+              "Labordiagnostik",
+              "Health Check",
+              "HRV-Analyse",
+              "EKG"
+            ],
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": "https://www.appointmed.com/booking/2399598-alexandra-buchmann",
+              "name": "Termin buchen"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Leistungen",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Health Check – Ganzheitliche Analyse",
+                    "description": "Mit moderner Diagnostik (BIA, EKG, HRV), ausführlicher Anamnese und einer umfangreichen Vitalparameter-Analyse entsteht ein persönliches Gesundheitsprofil. Risiken früh erkennen, Grundlage für ein individuelles Therapiekonzept."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Labordiagnostik",
+                    "description": "Fundierte Werte für klare Entscheidungen: von umfassenden Profilen bis zu gezielten Nährstoffanalysen. Laborwerte bilden die Basis einer präzisen Behandlung und machen Fortschritte sichtbar."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Nährstofftherapie",
+                    "description": "Individuelle Nährstoffkonzepte auf Basis von Laborwerten und Bedarf – Speicher ins Gleichgewicht bringen, Energie, Immunsystem und Regeneration nachhaltig stärken."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Craniosakrale Osteopathie",
+                    "description": "Sanfte manuelle Techniken lösen Blockaden und fördern Balance. Ziel: Funktionsstörungen beseitigen, Schmerzen lindern und natürliche Heilungsprozesse aktivieren."
+                  }
+                }
+              ]
+            }
+          })}
+        </script>
       </head>
       <GoogleAnalytics />
       <body
