@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Footer() {
@@ -183,6 +184,13 @@ export default function Footer() {
             <a href="/datenschutz" className="hover:text-burgundy">Datenschutz</a>
             <span>|</span>
             <a href="/agb" className="hover:text-burgundy">AGB</a>
+            <span>|</span>
+            <Link href="/blog" className="hover:text-burgundy flex items-center gap-1">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+              </svg>
+              Blog
+            </Link>
             <span>|</span>
             <a href="https://wa.me/4940607763460" target="_blank" rel="noopener noreferrer" className="hover:text-burgundy flex items-center gap-1">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

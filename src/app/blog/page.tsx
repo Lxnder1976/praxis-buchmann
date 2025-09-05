@@ -2,6 +2,7 @@ import { getAllBlogPosts } from '@/lib/blog';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'Blog - Alexandra Buchmann | Gesundheit & Wohlbefinden',
@@ -22,7 +23,8 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
+      {/* Hauptnavigation verwenden */}
+      <Header />
       <section className="bg-new-cream py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="heading-primary text-4xl lg:text-5xl text-burgundy mb-6">

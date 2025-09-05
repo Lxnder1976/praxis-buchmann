@@ -1,8 +1,0 @@
-# Placeholder für hero.jpg
-# 
-# Ersetzen Sie diese Datei durch Ihr echtes Hero-Bild:
-# - Größe: 1200 x 600 Pixel
-# - Format: JPG oder PNG
-# - Dateigröße: Max. 300 KB
-# 
-# Löschen Sie diese .txt Datei und fügen Sie stattdessen Ihr hero.jpg hinzu

@@ -1,4 +1,6 @@
 import { MetadataRoute } from 'next';
+import fs from 'fs';
+import path from 'path';
 
 export const dynamic = 'force-static';
 
@@ -11,9 +13,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/datenschutz', 
     '/impressum',
     '/agb',
+    '/blog', // Blog-Übersichtsseite
   ];
 
-  const staticSitemapEntries: MetadataRoute.Sitemap = staticPages.map(page => ({
+  // Dynamisch alle Blog-Posts aus dem content/blog Verzeichnis laden
+  const blogPages: string[] = [];
+  try {
+    const contentDir = path.join(process.cwd(), 'content', 'blog');
+    if (fs.existsSync(contentDir)) {
+      const blogDirs = fs.readdirSync(contentDir, { withFileTypes: true })
+        .filter(dirent => dirent.isDirectory())
+        .map(dirent => `/blog/${dirent.name}`);
+      blogPages.push(...blogDirs);
+    }
+  } catch (error) {
+    console.warn('Could not read blog directory:', error);
+  }
+
+  const allPages = [...staticPages, ...blogPages];
+
+  const staticSitemapEntries: MetadataRoute.Sitemap = allPages.map(page => ({
     url: `${baseUrl}${page}`,
     lastModified: new Date().toISOString().split('T')[0], // Nur Datum, kein Timestamp
     // priority und changeFrequency entfernt - Google ignoriert sie oft

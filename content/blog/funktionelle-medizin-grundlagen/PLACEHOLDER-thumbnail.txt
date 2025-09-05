@@ -1,8 +1,0 @@
-# Placeholder für thumbnail.jpg
-# 
-# Ersetzen Sie diese Datei durch Ihr echtes Thumbnail-Bild:
-# - Größe: 400 x 300 Pixel
-# - Format: JPG oder PNG
-# - Dateigröße: Max. 100 KB
-# 
-# Löschen Sie diese .txt Datei und fügen Sie stattdessen Ihr thumbnail.jpg hinzu

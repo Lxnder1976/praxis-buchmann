@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import Header from '@/components/Header';
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -59,6 +60,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Hauptnavigation verwenden */}
+      <Header />
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px] bg-burgundy/5">
         <Image
@@ -132,7 +135,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 In ihrer Praxis in Wentorf begleitet sie Menschen auf ihrem Weg zu mehr Gesundheit und Lebensqualität.
               </p>
               <Link 
-                href="/kontakt" 
+                href="/#kontakt" 
                 className="btn-outline-burgundy inline-block"
               >
                 Kontakt aufnehmen
@@ -140,11 +143,35 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </div>
 
+          {/* Call-to-Action zur Hauptseite */}
+          <div className="mt-12 bg-burgundy/5 rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-medium text-burgundy mb-4">
+              Interessiert an einer persönlichen Beratung?
+            </h3>
+            <p className="body-text text-burgundy/80 mb-6 max-w-2xl mx-auto">
+              Erfahren Sie mehr über meine Leistungen und wie ich Sie auf Ihrem Weg zu mehr Gesundheit und Lebensqualität unterstützen kann.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link 
+                href="/#leistungen" 
+                className="btn-burgundy"
+              >
+                Meine Leistungen entdecken
+              </Link>
+              <Link 
+                href="/" 
+                className="btn-outline-burgundy"
+              >
+                Zur Startseite
+              </Link>
+            </div>
+          </div>
+
           {/* Navigation */}
-          <div className="mt-12 text-center">
+          <div className="mt-8 text-center">
             <Link 
               href="/blog" 
-              className="btn-burgundy inline-block"
+              className="text-burgundy hover:text-coral transition-colors inline-flex items-center"
             >
               ← Zurück zum Blog
             </Link>
