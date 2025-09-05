@@ -15,9 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticSitemapEntries: MetadataRoute.Sitemap = staticPages.map(page => ({
     url: `${baseUrl}${page}`,
-    lastModified: new Date().toISOString().split('.')[0] + 'Z', // Ohne Millisekunden
-    changeFrequency: page === '/' ? 'weekly' as const : 'monthly' as const,
-    priority: page === '/' ? 1.0 : 0.8, // Als Dezimal
+    lastModified: new Date().toISOString().split('T')[0], // Nur Datum, kein Timestamp
+    // priority und changeFrequency entfernt - Google ignoriert sie oft
   }));
 
   return staticSitemapEntries;
