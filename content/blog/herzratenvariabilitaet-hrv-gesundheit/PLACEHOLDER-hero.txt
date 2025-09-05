@@ -1,0 +1,4 @@
+PLACEHOLDER - Hero image needed for HRV blog post
+Suggested: Heart rate monitor, ECG visualization, or health measurement device
+Dimensions: Ideally 800x500px or similar aspect ratio
+Format: JPG or WebP preferred
