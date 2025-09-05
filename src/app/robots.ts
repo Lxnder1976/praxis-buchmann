@@ -9,7 +9,7 @@ export default function robots() {
         disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: 'https://praxis-buchmann.info/sitemap.xml',
-    host: 'https://praxis-buchmann.info',
+    sitemap: 'https://www.praxis-buchmann.info/sitemap.xml',
+    host: 'https://www.praxis-buchmann.info',
   };
 }

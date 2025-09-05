@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://praxis-buchmann.info'; // Korrekte .info Domain
+  const baseUrl = 'https://www.praxis-buchmann.info'; // Korrekte .info Domain mit www
 
   // Statische Seiten (ohne thin content pages wie termin-bestaetigt)
   const staticPages = [
