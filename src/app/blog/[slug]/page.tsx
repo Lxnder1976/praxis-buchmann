@@ -62,67 +62,56 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     <div className="min-h-screen bg-white">
       {/* Hauptnavigation verwenden */}
       <Header />
-      {/* Hero Section */}
-      <section className="relative h-[50vh] min-h-[400px] bg-burgundy/5">
+      {/* Hero Section - Responsive Höhe für Mobile */}
+      <section className="relative h-[35vh] sm:h-[45vh] lg:h-[60vh] min-h-[250px] sm:min-h-[350px] lg:min-h-[500px] bg-burgundy/5">
         <Image
           src={post.heroPath}
           alt={post.title}
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
           sizes="100vw"
+          style={{ 
+            objectPosition: 'center 20%' // Noch weniger Zoom, mehr vom Bild sichtbar
+          }}
         />
-        <div className="absolute inset-0 bg-burgundy/40"></div>
-        
-        {/* Content Overlay */}
-        <div className="absolute inset-0 flex items-end">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full">
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8">
-              {/* Category & Meta */}
-              <div className="flex items-center gap-4 mb-4">
-                <span className="inline-block bg-coral text-white text-sm font-medium px-3 py-1 rounded-full">
-                  {post.category}
-                </span>
-                <span className="text-burgundy/70 text-sm">
-                  {formatDate(post.date)}
-                </span>
-                <span className="text-burgundy/70 text-sm">
-                  {post.readTime}
-                </span>
-              </div>
-              
-              {/* Title */}
-              <h1 className="heading-primary text-3xl lg:text-4xl text-burgundy mb-4">
-                {post.title}
-              </h1>
-              
-              {/* Author */}
-              <p className="text-burgundy/80">
-                von <strong>{post.author}</strong>
-              </p>
-            </div>
+        {/* Subtiles Gradient für bessere Lesbarkeit */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+      </section>
+
+      {/* Titel und Metadaten unter dem Hero-Bild */}
+      <section className="bg-white pt-6 lg:pt-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Category & Meta */}
+          <div className="flex items-center gap-4 mb-6">
+            <span className="inline-block bg-coral text-white text-sm font-medium px-3 py-1 rounded-full">
+              {post.category}
+            </span>
+            <span className="text-burgundy/70 text-sm">
+              {formatDate(post.date)}
+            </span>
+            <span className="text-burgundy/70 text-sm">
+              {post.readTime}
+            </span>
           </div>
+          
+          {/* Title */}
+          <h1 className="blog-title">
+            {post.title}
+          </h1>
         </div>
       </section>
 
       {/* Blog Content */}
-      <article className="section-padding">
+      <article className="pt-0.5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Content */}
           <div 
-            className="prose prose-lg max-w-none
-              prose-headings:text-burgundy prose-headings:font-medium
-              prose-h1:text-3xl prose-h1:mb-6 prose-h1:mt-8 prose-h1:font-semibold
-              prose-h2:text-2xl prose-h2:mb-4 prose-h2:mt-6 prose-h2:font-semibold
-              prose-h3:text-xl prose-h3:mb-3 prose-h3:mt-5 prose-h3:font-medium
-              prose-h4:text-lg prose-h4:mb-2 prose-h4:mt-4 prose-h4:font-medium
-              prose-p:text-burgundy/90 prose-p:leading-relaxed prose-p:mb-4
-              prose-strong:text-burgundy prose-strong:font-semibold
-              prose-ul:text-burgundy/90 prose-ol:text-burgundy/90
-              prose-li:mb-2 prose-li:text-burgundy/90
-              prose-a:text-coral prose-a:no-underline hover:prose-a:underline
-              prose-blockquote:border-l-coral prose-blockquote:bg-coral/5 prose-blockquote:pl-6 prose-blockquote:py-4
-              prose-blockquote:text-burgundy/80"
+            className="prose prose-sm sm:prose md:prose-lg max-w-none
+              prose-p:leading-relaxed prose-p:mb-4
+              prose-ul:mb-4 prose-ol:mb-4
+              prose-li:mb-2
+              prose-a:no-underline hover:prose-a:underline"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
           

@@ -6,6 +6,7 @@ excerpt: "Erfahren Sie, wie die funktionelle Medizin Ursachen statt Symptome beh
 author: "Alexandra Buchmann"
 readTime: "5 Min. Lesezeit"
 ---
+# Funktionelle Medizin: Die Grundlagen eines ganzheitlichen Ansatzes
 
 Die funktionelle Medizin revolutioniert die Art, wie wir Gesundheit und Krankheit betrachten. Während die konventionelle Medizin oft Symptome behandelt, geht die funktionelle Medizin einen Schritt weiter und fragt: **Warum** entstehen diese Beschwerden überhaupt?
 

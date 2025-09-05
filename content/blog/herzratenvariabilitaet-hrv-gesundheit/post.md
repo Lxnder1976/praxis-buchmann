@@ -6,9 +6,6 @@ excerpt: "Die Herzratenvariabilität (HRV) zeigt, wie flexibel unser Körper auf
 author: "Alexandra Buchmann"  
 readTime: "6 Min. Lesezeit"  
 ---
-
-# Herzratenvariabilität: Was Ihr Herz über Ihre Gesundheit verrät
-
 Viele Menschen glauben, ein gesundes Herz müsse schlagen wie ein Uhrwerk – regelmäßig und ohne Schwankungen. In Wirklichkeit ist es genau andersherum: **Je variabler die Abstände zwischen den Herzschlägen sind, desto besser ist unser Körper in der Lage, flexibel auf Belastungen zu reagieren.** Diese Schwankungen nennt man **Herzratenvariabilität (HRV)**.  
 
 ## Warum ist die HRV so wichtig?  

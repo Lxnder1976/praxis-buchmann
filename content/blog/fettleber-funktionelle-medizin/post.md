@@ -7,6 +7,8 @@ author: "Alexandra Buchmann"
 readTime: "6 Min. Lesezeit"
 ---
 
+# Fettleber: Wie funktionelle Medizin bei der Lebergesundheit unterstützt
+
 Unsere Leber ist ein echtes Multitalent: Sie speichert Nährstoffe, baut Giftstoffe ab, reguliert den Zucker- und Fettstoffwechsel und unterstützt sogar unser Immunsystem. Umso alarmierender ist es, dass die sogenannte Fettleber heute als „unterschätzte Volkskrankheit“ gilt – oft ohne dass Betroffene etwas davon merken. 
 
 ## Warum ist die Fettleber so gefährlich?

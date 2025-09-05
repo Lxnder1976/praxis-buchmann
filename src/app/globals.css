@@ -1,5 +1,62 @@
 @import "tailwindcss";
 
+/* Prose Typography - Tailwind CSS v4 Style */
+@layer utilities {
+  /* Base prose styles */
+  .prose {
+    color: rgb(91 26 44 / 0.9);
+    line-height: 1.7;
+  }
+  
+  /* Typography Hierarchy - Mobile First */
+  .prose h1 {
+    font-size: 1.375rem !important; /* 22px */
+    font-weight: 600 !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    color: #5b1a2c !important;
+  }
+  
+  .prose h2 {
+    font-size: 1rem !important; /* 16px - kleiner als H1 */
+    font-weight: 500 !important; /* Leichter für bessere Balance */
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    color: #5b1a2c !important;
+  }
+  
+  .prose h3 {
+    font-size: 1rem !important; /* 16px */
+    font-weight: 500 !important;
+    margin-top: 1.25rem !important;
+    margin-bottom: 0.75rem !important;
+    color: #5b1a2c !important;
+  }
+  
+  .prose h4 {
+    font-size: 0.875rem !important; /* 14px */
+    font-weight: 500 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0.5rem !important;
+    color: #5b1a2c !important;
+  }
+  
+  /* Responsive Typography */
+  @media (min-width: 640px) {
+    .prose h1 { font-size: 1.5rem !important; } /* 24px */
+    .prose h2 { font-size: 1.25rem !important; } /* 20px - kleiner als H1 */
+    .prose h3 { font-size: 1.125rem !important; } /* 18px */
+    .prose h4 { font-size: 1rem !important; } /* 16px */
+  }
+  
+  @media (min-width: 1024px) {
+    .prose h1 { font-size: 1.875rem !important; } /* 30px */
+    .prose h2 { font-size: 1.5rem !important; } /* 24px - kleiner als H1 */
+    .prose h3 { font-size: 1.25rem !important; } /* 20px */
+    .prose h4 { font-size: 1.125rem !important; } /* 18px */
+  }
+}
+
 /* Critical CSS inline - loads immediately */
 :root {
   --burgundy: #5b1a2c;
@@ -45,6 +102,29 @@ body {
   font-family: var(--font-krub), sans-serif;
   line-height: 1.6;
   color: var(--burgundy);
+}
+
+/* Blog title - responsive sizing to prevent hydration issues */
+.blog-title {
+  font-family: var(--font-playfair-display), serif;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 1.5rem; /* 24px for mobile */
+  color: var(--burgundy);
+  margin-bottom: 0.5rem; /* Sehr kleiner Abstand zum Content */
+}
+
+/* Larger screens get bigger title */
+@media (min-width: 1024px) {
+  .blog-title {
+    font-size: 2.25rem; /* 36px for desktop - text-4xl equivalent */
+  }
+}
+
+@media (min-width: 1280px) {
+  .blog-title {
+    font-size: 3rem; /* 48px for XL screens - text-5xl equivalent */
+  }
 }
 
 .btn-burgundy {

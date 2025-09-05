@@ -25,12 +25,12 @@ export default function BlogPage() {
     <div className="min-h-screen bg-white">
       {/* Hauptnavigation verwenden */}
       <Header />
-      <section className="bg-new-cream py-16">
+      <section className="bg-new-cream py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="heading-primary text-4xl lg:text-5xl text-burgundy mb-6">
+          <h1 className="heading-primary text-2xl sm:text-3xl lg:text-4xl text-burgundy mb-4 md:mb-6">
             Blog
           </h1>
-          <p className="body-text text-xl text-burgundy/80 max-w-3xl mx-auto">
+          <p className="body-text text-base sm:text-lg lg:text-xl text-burgundy/80 max-w-3xl mx-auto">
             Entdecken Sie wertvolle Einblicke zu funktioneller Medizin, Osteopathie und ganzheitlicher Gesundheit. 
             Hier teile ich mein Wissen und meine Erfahrungen für Ihr Wohlbefinden.
           </p>
@@ -52,7 +52,7 @@ export default function BlogPage() {
                 <article key={post.slug} className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
                   <Link href={`/blog/${post.slug}`} className="flex flex-col h-full">
                     {/* Thumbnail */}
-                    <div className="relative h-48 bg-burgundy/5 flex-shrink-0">
+                    <div className="relative h-48 sm:h-44 md:h-48 bg-burgundy/5 flex-shrink-0">
                       <Image
                         src={post.thumbnailPath}
                         alt={post.title}
@@ -63,9 +63,9 @@ export default function BlogPage() {
                     </div>
                     
                     {/* Content */}
-                    <div className="p-6 flex flex-col flex-grow">
+                    <div className="p-4 sm:p-6 flex flex-col flex-grow">
                       {/* Category & Date */}
-                      <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center justify-between mb-3 sm:mb-4">
                         <span className="inline-block bg-coral/10 text-coral text-xs font-medium px-3 py-1 rounded-full">
                           {post.category}
                         </span>
@@ -75,12 +75,12 @@ export default function BlogPage() {
                       </div>
                       
                       {/* Title */}
-                      <h2 className="heading-secondary text-lg sm:text-xl text-burgundy mb-4 line-clamp-4 sm:line-clamp-3 hover:text-coral transition-colors">
+                      <h2 className="heading-secondary text-base sm:text-lg md:text-xl text-burgundy mb-3 sm:mb-4 line-clamp-4 sm:line-clamp-3 hover:text-coral transition-colors">
                         {post.title}
                       </h2>
                       
                       {/* Excerpt */}
-                      <p className="body-text text-burgundy/80 mb-4 line-clamp-3 flex-grow">
+                      <p className="body-text text-sm sm:text-base text-burgundy/80 mb-3 sm:mb-4 line-clamp-3 flex-grow">
                         {post.excerpt}
                       </p>
                       
