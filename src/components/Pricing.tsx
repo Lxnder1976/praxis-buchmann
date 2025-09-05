@@ -36,14 +36,15 @@ export default function Pricing() {
                   <span className="font-medium whitespace-nowrap">350,00&nbsp;€</span>
                 </div>
                 <div className="flex justify-between items-start">
-                  <span className="body-text text-left">
-                    Nährstofftherapie <span className="hidden md:inline">(Anamnese, Analyse, Therapieplan)</span>
-                  </span>
-                  <span className="font-medium whitespace-nowrap">180,00&nbsp;€</span>
-                </div>
-                <div className="flex justify-between items-start">
                   <span className="body-text text-left">Nährstofftherapie + Labordiagnostik</span>
                   <span className="font-medium whitespace-nowrap">250,00&nbsp;€</span>
+                </div>
+
+                <div className="flex justify-between items-start">
+                  <span className="body-text text-left">
+                    Nährstoffinfusionen 
+                  </span>
+                  <span className="font-medium whitespace-nowrap">ab 65,00&nbsp;€</span>
                 </div>
               </div>
               
