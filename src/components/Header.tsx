@@ -73,7 +73,7 @@ export default function Header() {
             </Link>
           </div>
           
-                    {/* Navigation rechts */}
+          {/* Navigation rechts */}
           <div className="hidden xl:flex justify-end items-center space-x-6 whitespace-nowrap pr-0 -mr-8">
             <a href="#funktionelle-medizin" className="text-sm text-burgundy hover:text-coral transition-colors whitespace-nowrap">FUNKTIONELLE MEDIZIN</a>
             <a href="#leistungen" className="text-sm text-burgundy hover:text-coral transition-colors whitespace-nowrap">LEISTUNGEN</a>
@@ -146,6 +146,13 @@ export default function Header() {
             >
               KONTAKT
             </a>
+            <Link 
+              href="/blog" 
+              className="block text-burgundy hover:text-coral transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              BLOG
+            </Link>
           </div>
         </div>
       </nav>
