@@ -12,7 +12,7 @@ export default function Pricing() {
             </h2>
             
             <p className="body-text text-lg">
-              Termine erfolgen nach Vereinbarung, die Abrechnung nach GebüH mit direkter Zahlung oder per Rechnung. Erstattungen variieren: PKV je nach Tarif, GKV meist als Selbstzahler mit möglichen Zuschüssen für Osteopathie, und Zusatzversicherungen übernehmen oft 60–100 % bis zu einem Jahresbudget – bitte informieren Sie sich bei Ihrer Krankenversicherung, wir unterstützen Sie gerne.
+              Termine erfolgen nach Vereinbarung, die Abrechnung nach GebüH und Honorarvereinbarung mit direkter Zahlung oder per Rechnung. Erstattungen variieren: PKV je nach Tarif, GKV meist als Selbstzahler mit möglichen Zuschüssen für Osteopathie, und Zusatzversicherungen übernehmen oft 60–100 % bis zu einem Jahresbudget – bitte informieren Sie sich bei Ihrer Krankenversicherung, wir unterstützen Sie gerne.
             </p>
             
             {/* Preistabelle */}
