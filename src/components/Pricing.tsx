@@ -12,7 +12,7 @@ export default function Pricing() {
             </h2>
             
             <p className="body-text text-lg">
-              Eine Beratung beginnt immer mit einem ausführlichen Gespräch über Ihre Beschwerden, Ihre Krankengeschichte und Ihre Ziele. Je nach Bedarf folgen dann gezielte Untersuchungen und die Besprechung eines individuellen Behandlungsplans.
+              Termine erfolgen nach Vereinbarung, die Abrechnung nach GebüH mit direkter Zahlung oder per Rechnung. Erstattungen variieren: PKV je nach Tarif, GKV meist als Selbstzahler mit möglichen Zuschüssen für Osteopathie, und Zusatzversicherungen übernehmen oft 60–100 % bis zu einem Jahresbudget – bitte informieren Sie sich bei Ihrer Krankenversicherung, wir unterstützen Sie gerne.
             </p>
             
             {/* Preistabelle */}
@@ -32,11 +32,11 @@ export default function Pricing() {
                   <span className="font-medium whitespace-nowrap">280,00&nbsp;€</span>
                 </div>
                 <div className="flex justify-between items-start">
-                  <span className="body-text text-left">Health Check + Labordiagnostik</span>
+                  <span className="body-text text-left">Health Check + Labordiagnostik<sup>*</sup></span>
                   <span className="font-medium whitespace-nowrap">350,00&nbsp;€</span>
                 </div>
                 <div className="flex justify-between items-start">
-                  <span className="body-text text-left">Nährstofftherapie + Labordiagnostik</span>
+                  <span className="body-text text-left">Nährstofftherapie + Labordiagnostik<sup>*</sup></span>
                   <span className="font-medium whitespace-nowrap">250,00&nbsp;€</span>
                 </div>
 
@@ -49,7 +49,7 @@ export default function Pricing() {
               </div>
               
               <p className="body-text text-xs mt-4 text-gray-600">
-                *Alle Preise verstehen sich als Selbstzahlerleistungen. Eine Kostenerstattung durch die Krankenversicherung ist je nach Tarif möglich.
+                *Die Kosten für die Labordiagnostik (z. B. Blutentnahme und Laboruntersuchungen) richten sich nach dem tatsächlichen Aufwand und werden vom beauftragten Labor in Rechnung gestellt. Sie erhalten eine detaillierte Laborabrechnung basierend auf den getesteten Werten.                
               </p>
             </div>
           </div>
