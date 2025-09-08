@@ -11,10 +11,10 @@ export default function Services() {
           </h2>
         </FadeIn>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-y-12 md:grid-rows-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-y-12 md:auto-rows-fr">
           {/* Health Check */}
           <FadeIn direction="up" delay={100} duration={600}>
-            <div className="relative">
+            <div className="relative h-full">
               <div className="w-12 h-12 mx-auto relative -mb-6 z-10 perle-pulse">
                 <Image
                   src="/Perle_burgund.png"
@@ -31,7 +31,7 @@ export default function Services() {
                   FÜR EINEN KLAREN ÜBERBLICK
                 </p>
                 <p className="body-text flex-1">
-                  Mit moderner Diagnostik (BIA, EKG, HRV), ausführlicher Anamnese und einer umfangreichen Vitalparameter-Analyse entsteht ein persönliches Gesundheitsprofil. So lassen sich Risiken frühzeitig erkennen und die Basis für ein individuelles Therapiekonzept schaffen.
+                  Mit moderner Diagnostik (BIA, EKG, HRV), einer ausführlichen Anamnese und einer umfangreichen Vitalparameter-Analyse entsteht ein persönliches Gesundheitsprofil.So können mögliche Risiken frühzeitig sichtbar werden und es entsteht eine fundierte Grundlage für ein individuelles Therapiekonzept.
                 </p>
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function Services() {
           
           {/* Labordiagnostik */}
           <FadeIn direction="up" delay={200} duration={600}>
-            <div className="relative">
+            <div className="relative h-full">
               <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
                 <Image
                   src="/Perle_gold.png"
@@ -56,7 +56,8 @@ export default function Services() {
                   KLARE ENTSCHEIDUNGEN.
                 </p>
                 <p className="body-text flex-1">
-                  Ob umfassendes Profil oder gezielte Nährstoffanalysen: Ihre Laborwerte bilden die Grundlage für eine präzise Behandlung und machen Fortschritte sichtbar. Durch die Auswahl spezifischer Parameter lassen sich Zusammenhänge erkennen und individuelle Schwerpunkte gezielt berücksichtigen.
+                  Ob umfassendes Profil oder gezielte Nährstoffanalysen: Ihre Laborwerte liefern wichtige Hinweise für eine individuelle Einschätzung und können als Grundlage für eine passende Betreuung dienen.
+                Durch die Auswahl spezifischer Parameter können Zusammenhänge sichtbar werden und individuelle Schwerpunkte berücksichtigt werden.  
                 </p>
               </div>
             </div>
@@ -64,7 +65,7 @@ export default function Services() {
           
           {/* Nährstofftherapie */}
           <FadeIn direction="up" delay={150} duration={600}>
-            <div className="relative">
+            <div className="relative h-full">
               <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
                 <Image
                   src="/Perle_gold.png"
@@ -81,7 +82,8 @@ export default function Services() {
                   VON INNEN.
                 </p>
                 <p className="body-text flex-1">
-                  Individuelle Nährstoffkonzepte – auf Basis von Laborwerten und Ihren Bedürfnissen. Ziel ist es, fehlende Reserven aufzufüllen, die Speicher wieder ins Gleichgewicht zu bringen und so Energie, Immunsystem und Regeneration nachhaltig zu stärken.
+                  Sanfte manuelle Techniken können dazu beitragen, Beweglichkeit zu unterstützen und das innere Gleichgewicht zu fördern.
+                    Sie können hilfreich sein, um Funktionsstörungen positiv zu beeinflussen, Schmerzen zu lindern und die natürlichen Regenerationsprozesse des Körpers zu unterstützen.
                 </p>
               </div>
             </div>
@@ -89,7 +91,7 @@ export default function Services() {
           
           {/* Craniosakrale Osteopathie */}
           <FadeIn direction="up" delay={250} duration={600}>
-            <div className="relative">
+            <div className="relative h-full">
               <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
                 <Image
                   src="/Perle_burgund.png"
