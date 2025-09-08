@@ -82,8 +82,9 @@ export default function Services() {
                   VON INNEN.
                 </p>
                 <p className="body-text flex-1">
-                  Sanfte manuelle Techniken können dazu beitragen, Beweglichkeit zu unterstützen und das innere Gleichgewicht zu fördern.
-                    Sie können hilfreich sein, um Funktionsstörungen positiv zu beeinflussen, Schmerzen zu lindern und die natürlichen Regenerationsprozesse des Körpers zu unterstützen.
+                  Individuelle Nährstoffkonzepte auf Basis von Laborwerten und Ihren persönlichen Bedürfnissen.
+                Die Therapie kann dabei unterstützen, fehlende Reserven auszugleichen und das innere Gleichgewicht zu fördern.
+                Sie kann zudem einen positiven Einfluss auf Energie, Immunsystem und Regeneration haben.
                 </p>
               </div>
             </div>
