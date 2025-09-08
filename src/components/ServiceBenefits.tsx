@@ -30,7 +30,7 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
           </div>
           
           {/* Mobile Benefits */}
-          <div className="bg-contact p-12 min-h-[600px]">
+          <div className="bg-contact p-12 min-h-[480px]">
             <p className="body-text !text-white text-base mb-8">
               Viele Patient:innen berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
             </p>
@@ -66,7 +66,7 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
           </div>
           
           {/* Benefits */}
-          <div className="bg-contact p-12 md:p-16 min-h-[600px]">
+          <div className="bg-contact p-12 md:p-16 min-h-[480px]">
             <p className="body-text !text-white text-lg mb-10">
               Viele Patient:innen berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
             </p>
@@ -87,11 +87,11 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
         </div>
 
         {/* Desktop Layout (ab xl) - Two Columns */}
-        <div className="hidden xl:grid xl:grid-cols-2 relative min-h-[700px]">
+        <div className="hidden xl:grid xl:grid-cols-2 relative min-h-[560px]">
           {/* Left column - white background with overlapping image */}
           <div className="bg-white relative z-10">
             <div className="p-8 xl:p-12 pr-0 flex justify-end h-full">
-              <div className="relative w-full h-[55rem] -mt-24 -mb-24 -mr-12 xl:-mr-16 2xl:-mr-20 z-30">
+              <div className="relative w-full h-[44rem] -mt-20 -mb-20 -mr-12 xl:-mr-16 2xl:-mr-20 z-30">
                 <Image
                   src={heroImage}
                   alt={title}
@@ -104,7 +104,7 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
           </div>
           
           {/* Right column - contact background with benefits */}
-          <div className="bg-contact p-12 xl:p-20 2xl:p-24 relative z-0 min-h-[700px]">
+          <div className="bg-contact p-12 xl:p-20 2xl:p-24 relative z-0 min-h-[560px]">
             <div className="flex flex-col justify-center h-full pl-8 xl:pl-12">
               <p className="body-text !text-white text-lg mb-10">
                 Viele Patient:innen berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
