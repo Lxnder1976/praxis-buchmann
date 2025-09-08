@@ -50,11 +50,11 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
           </div>
         </div>
 
-        {/* Tablet Layout (sm bis lg) - Bild volle Breite ohne Rundungen */}
-        <div className="hidden sm:block lg:hidden">
-          {/* Image ohne Padding, volle Breite */}
-          <div className="bg-white relative">
-            <div className="relative w-full aspect-[4/3] z-30">
+        {/* Tablet Layout (sm bis xl) - Wie Mobile: Bild über Text, volle Breite */}
+        <div className="hidden sm:block xl:hidden">
+          {/* Image - eckig, ohne Padding, volle Breite */}
+          <div className="bg-white">
+            <div className="relative w-full aspect-[4/3]">
               <Image
                 src={heroImage}
                 alt={title}
@@ -63,12 +63,10 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
                 sizes="100vw"
               />
             </div>
-            {/* Invisible extension für symmetrische Überlappung */}
-            <div className="h-20"></div>
           </div>
           
           {/* Benefits */}
-          <div className="bg-contact p-12 md:p-16 min-h-[600px] -mt-28 pt-32 relative z-10">
+          <div className="bg-contact p-12 md:p-16 min-h-[600px]">
             <p className="body-text !text-white text-lg mb-10">
               Viele Patient:innen berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
             </p>
@@ -88,26 +86,26 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
           </div>
         </div>
 
-        {/* Desktop Layout (ab lg) - Two Columns */}
-        <div className="hidden lg:grid lg:grid-cols-2 relative min-h-[700px]">
+        {/* Desktop Layout (ab xl) - Two Columns */}
+        <div className="hidden xl:grid xl:grid-cols-2 relative min-h-[700px]">
           {/* Left column - white background with overlapping image */}
           <div className="bg-white relative z-10">
-            <div className="p-8 lg:p-12 pr-0 flex justify-end h-full">
-              <div className="relative w-full h-[55rem] -mt-24 -mb-24 -mr-12 lg:-mr-16 xl:-mr-20 z-30">
+            <div className="p-8 xl:p-12 pr-0 flex justify-end h-full">
+              <div className="relative w-full h-[55rem] -mt-24 -mb-24 -mr-12 xl:-mr-16 2xl:-mr-20 z-30">
                 <Image
                   src={heroImage}
                   alt={title}
                   fill
                   className="object-cover rounded-3xl shadow-lg"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="(max-width: 1280px) 100vw, 50vw"
                 />
               </div>
             </div>
           </div>
           
           {/* Right column - contact background with benefits */}
-          <div className="bg-contact p-12 lg:p-20 xl:p-24 relative z-0 min-h-[700px]">
-            <div className="flex flex-col justify-center h-full pl-8 lg:pl-12">
+          <div className="bg-contact p-12 xl:p-20 2xl:p-24 relative z-0 min-h-[700px]">
+            <div className="flex flex-col justify-center h-full pl-8 xl:pl-12">
               <p className="body-text !text-white text-lg mb-10">
                 Viele Patient:innen berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
               </p>
