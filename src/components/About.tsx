@@ -45,11 +45,11 @@ export default function About() {
             
             <div className="space-y-6">
               <p className="body-text text-lg">
-                Mein Name ist Alexandra Buchmann, und als Heilpraktikerin ist es meine Leidenschaft, Menschen wie Sie auf ihrem Weg zu mehr Gesundheit und Lebensqualität zu begleiten. Mit meiner Erfahrung aus der Laboranalytik, meiner Ausbildung zur Heilpraktikerin und meiner mehrjährigen Expertise in der Osteopathie habe ich gelernt, den Körper als Ganzes zu betrachten.
+                Mein Name ist Alexandra Buchmann. In meiner Praxis verbinde ich Heilpraktik, Osteopathie und meine Erfahrung aus der Labormedizin zu einem ganzheitlichen Konzept im Sinne der funktionellen Medizin. Dabei ist es mir ein Herzensanliegen, den Menschen in seiner Gesamtheit zu sehen mit all seinen Bedürfnissen und seiner persönlichen Geschichte.
               </p>
               
               <p className="body-text text-lg">
-                Deshalb steht bei mir immer der Mensch im Mittelpunkt – mit all seinen individuellen Bedürfnissen und seiner einzigartigen Geschichte. Ich nehme mir die Zeit, die Ursachen Ihrer Beschwerden zu ergründen und ein ganz auf Sie zugeschnittenes Behandlungskonzept zu entwickeln. So schaffen wir gemeinsam eine Lösung, die nicht nur Symptome lindert, sondern Ihre Gesundheit nachhaltig stärkt.
+                Meine Arbeit ist geprägt von Achtsamkeit, Freude und einem offenen Blick für das, was Sie wirklich brauchen. Ich nehme mir die Zeit, genau hinzuschauen, mögliche Zusammenhänge zu verstehen und gemeinsam mit Ihnen Wege zu finden, die Ihr Wohlbefinden fördern und Ihre Gesundheit bestmöglich unterstützen.
               </p>
             </div>
             
