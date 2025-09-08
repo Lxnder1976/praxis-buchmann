@@ -51,15 +51,16 @@ export default function FunktionelleMedizin() {
           
           <div className="space-y-6">
             <p className="body-text text-lg leading-relaxed">
-              Die funktionelle Medizin stellt die Ursachen in den Mittelpunkt – und betrachtet den Menschen mit einem ganzheitlichen Blick auf Körper, Geist und Lebensstil.
+              Die funktionelle Medizin stellt die Ursachen in den Mittelpunkt und betrachtet den Menschen mit einem ganzheitlichen Blick auf Körper, Geist und Lebensstil.
             </p>
             
             <p className="body-text text-lg leading-relaxed">
-              Ziel ist es, die tatsächlichen Auslöser von Beschwerden zu finden, anstatt nur deren Folgen zu behandeln. Dabei spielen Faktoren wie Ernährung, Stoffwechsel, Hormone, Darmgesundheit, das Immunsystem und der Lebensstil eine wichtige Rolle.
+              Ziel ist es, mögliche Auslöser von Beschwerden besser zu verstehen, anstatt ausschließlich deren Folgen zu behandeln. Dabei spielen Faktoren wie Ernährung, Stoffwechsel, Hormone, Darmgesundheit, das Immunsystem und der Lebensstil eine wichtige Rolle.
             </p>
             
             <p className="body-text text-lg leading-relaxed">
-              Die funktionelle Medizin eignet sich besonders bei komplexen oder wiederkehrenden Beschwerden wie Erschöpfung, Infektanfälligkeit, Stoffwechselstörungen oder hormonellen Dysbalancen – ebenso, wenn es darum geht, die Gesundheit langfristig zu erhalten und durch Longevity-Konzepte Gesundheit und Lebensqualität bis ins hohe Alter zu bewahren.
+              Die funktionelle Medizin wird häufig begleitend eingesetzt bei komplexen oder wiederkehrenden Beschwerden wie Erschöpfung, Infektanfälligkeit, Stoffwechselstörungen oder hormonellen Dysbalancen.
+                Darüber hinaus kann sie dazu beitragen, die Gesundheit langfristig zu fördern und Lebensqualität bis ins hohe Alter zu unterstützen.
             </p>
           </div>
         </div>
