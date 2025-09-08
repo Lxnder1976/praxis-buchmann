@@ -107,6 +107,10 @@ body {
 }
 
 .bg-burgundy { background-color: var(--burgundy); }
+.bg-coral { background-color: var(--coral); }
+.bg-contact { background-color: var(--contact-bg); }
+.bg-light-burgundy { background-color: #d4b5be; }
+.bg-light-coral { background-color: var(--light-coral); }
 .bg-new-cream { background-color: var(--new-cream); }
 .text-burgundy { color: var(--burgundy); }
 
