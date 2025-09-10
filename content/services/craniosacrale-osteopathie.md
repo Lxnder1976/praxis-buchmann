@@ -4,15 +4,12 @@ subtitle: "Die craniosakrale Osteopathie ist eine besonders sanfte Form der Oste
 Für mehr Gesundheit und Lebensqualität"
 heroImage: "/service_osteo.png"
 benefits:
-  - "Förderung körperlicher Entspannung durch sanfte Techniken"
   - "Unterstützung der Regulationsprozesse im Nervensystem"
   - "Verbesserung der Bewegungsqualität und Flexibilität"
-  - "Begleitend bei Verspannungen und muskulärer Anspannung"
-  - "Unterstützung in Phasen erhöhter Belastung oder Stress"
+  - "und funktionellen Beschwerden (z. B. im Bereich Kopf, Nacken, Rücken)"
+  - "Unterstützung in Phasen erhöhter Belastung, Stress oder Erschöpfung, Burn-Out"
   - "Begleitung nach Verletzungen und bei länger anhaltenden Beschwerden"
-  - "Förderung der Erholung bei Erschöpfungszuständen"
-  - "Unterstützung bei funktionellen Beschwerden (z. B. im Bereich Kopf, Nacken, Rücken)"
-  - "Beitrag zu mehr innerer Ruhe und Ausgeglichenheit"
+  - "Beitrag zu mehr innerer Ruhe, Ausgeglichenheit und Regeneration"
 treatmentSteps:
   - title: "Anamnese & Untersuchung"
     description: "Zu Beginn steht ein ausführliches Gespräch über Ihre Beschwerden und Ihre gesundheitliche Vorgeschichte. Anschließend folgt eine körperliche Untersuchung mit sanften Tests, um Beweglichkeit, Muskelspannung und mögliche Funktionsstörungen zu erfassen."

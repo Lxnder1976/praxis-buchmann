@@ -32,12 +32,12 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
           {/* Mobile Benefits */}
           <div className="bg-contact p-12 min-h-[480px]">
             <p className="body-text !text-white text-base mb-8">
-              Viele Patient:innen berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
+              Viele Patienten berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
             </p>
             <h3 className="body-text !text-white text-base font-bold mb-6 uppercase tracking-wider">
               TYPISCHE EINSATZBEREICHE SIND:
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-3">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
@@ -73,7 +73,7 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
             <h3 className="body-text !text-white text-lg font-bold mb-8 uppercase tracking-wider">
               TYPISCHE EINSATZBEREICHE SIND:
             </h3>
-            <div className="space-y-5">
+            <div className="space-y-4">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
@@ -87,32 +87,33 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
         </div>
 
         {/* Desktop Layout (ab xl) - Two Columns */}
-        <div className="hidden xl:grid xl:grid-cols-2 relative min-h-[560px]">
+        <div className="hidden xl:grid xl:grid-cols-2 relative">
           {/* Left column - white background with overlapping image */}
           <div className="bg-white relative z-10">
             <div className="p-8 xl:p-12 pr-0 flex justify-end h-full">
-              <div className="relative w-full h-[44rem] -mt-20 -mb-20 -mr-12 xl:-mr-16 2xl:-mr-20 z-30">
+              {/* Image positioned to match the height of the right column */}
+              <div className="absolute inset-y-0 right-0 w-full -my-10 -mr-12 xl:-mr-16 2xl:-mr-20 z-30">
                 <Image
                   src={heroImage}
                   alt={title}
                   fill
                   className="object-cover rounded-3xl shadow-lg"
-                  sizes="(max-width: 1280px) 100vw, 50vw"
+                  sizes="50vw"
                 />
               </div>
             </div>
           </div>
           
           {/* Right column - contact background with benefits */}
-          <div className="bg-contact p-12 xl:p-20 2xl:p-24 relative z-0 min-h-[560px]">
-            <div className="flex flex-col justify-center h-full pl-8 xl:pl-12">
+          <div className="bg-contact p-12 xl:p-20 2xl:p-24 relative z-0">
+            <div className="flex flex-col justify-center min-h-[480px] pl-8 xl:pl-12">
               <p className="body-text !text-white text-lg mb-10">
                 Viele Patient:innen berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
               </p>
               <h3 className="body-text !text-white text-lg font-bold mb-8 uppercase tracking-wider">
                 TYPISCHE EINSATZBEREICHE SIND:
               </h3>
-              <div className="space-y-5">
+              <div className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
