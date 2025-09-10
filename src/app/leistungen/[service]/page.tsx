@@ -70,6 +70,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           benefits={service.benefits}
           heroImage={service.heroImage}
           title={service.title}
+          benefitsIntro={service.benefitsIntro}
         />
         <TreatmentSteps steps={service.treatmentSteps} />
         <Contact />

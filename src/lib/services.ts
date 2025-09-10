@@ -9,6 +9,7 @@ export interface ServiceData {
   title: string;
   subtitle: string;
   heroImage: string;
+  benefitsIntro: string;
   benefits: string[];
   treatmentSteps: {
     title: string;
@@ -47,6 +48,7 @@ export function getServiceBySlug(slug: string): ServiceData | null {
       title: matterResult.data.title || 'Untitled Service',
       subtitle: matterResult.data.subtitle || '',
       heroImage: matterResult.data.heroImage || '',
+      benefitsIntro: matterResult.data.benefitsIntro || '',
       benefits: matterResult.data.benefits || [],
       treatmentSteps: matterResult.data.treatmentSteps || [],
       seo: matterResult.data.seo || {

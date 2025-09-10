@@ -4,9 +4,10 @@ interface ServiceBenefitsProps {
   benefits: string[];
   heroImage: string;
   title: string;
+  benefitsIntro: string;
 }
 
-export default function ServiceBenefits({ benefits, heroImage, title }: ServiceBenefitsProps) {
+export default function ServiceBenefits({ benefits, heroImage, title, benefitsIntro }: ServiceBenefitsProps) {
   return (
     <section className="relative">
       {/* Top narrow row - cream background */}
@@ -31,9 +32,10 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
           
           {/* Mobile Benefits */}
           <div className="bg-contact p-12 min-h-[480px]">
-            <p className="body-text !text-white text-base mb-8">
-              Viele Patienten berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
-            </p>
+            <p 
+              className="body-text !text-white text-base mb-8"
+              dangerouslySetInnerHTML={{ __html: benefitsIntro }}
+            />
             <h3 className="body-text !text-white text-base font-bold mb-6 uppercase tracking-wider">
               TYPISCHE EINSATZBEREICHE SIND:
             </h3>
@@ -67,9 +69,10 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
           
           {/* Benefits */}
           <div className="bg-contact p-12 md:p-16 min-h-[480px]">
-            <p className="body-text !text-white text-lg mb-10">
-              Viele Patient:innen berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
-            </p>
+            <p 
+              className="body-text !text-white text-lg mb-10"
+              dangerouslySetInnerHTML={{ __html: benefitsIntro }}
+            />
             <h3 className="body-text !text-white text-lg font-bold mb-8 uppercase tracking-wider">
               TYPISCHE EINSATZBEREICHE SIND:
             </h3>
@@ -107,9 +110,10 @@ export default function ServiceBenefits({ benefits, heroImage, title }: ServiceB
           {/* Right column - contact background with benefits */}
           <div className="bg-contact p-12 xl:p-20 2xl:p-24 relative z-0">
             <div className="flex flex-col justify-center min-h-[480px] pl-8 xl:pl-12">
-              <p className="body-text !text-white text-lg mb-10">
-                Viele Patient:innen berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung.
-              </p>
+              <p 
+                className="body-text !text-white text-lg mb-10"
+                dangerouslySetInnerHTML={{ __html: benefitsIntro }}
+              />
               <h3 className="body-text !text-white text-lg font-bold mb-8 uppercase tracking-wider">
                 TYPISCHE EINSATZBEREICHE SIND:
               </h3>

@@ -3,6 +3,7 @@ title: "Craniosacrale Osteopathie"
 subtitle: "Die craniosakrale Osteopathie ist eine besonders sanfte Form der Osteopathie. Mit fein abgestimmten manuellen Techniken werden Spannungen im Körper aufgespürt und regulierende Impulse gesetzt. Ziel ist es, die Bewegungsqualität und Funktionalität zu verbessern, das Nervensystem zu entlasten und mehr innere Balance zu ermöglichen. <br><br> Jede Behandlung wird individuell abgestimmt, achtsam, respektvoll und mit dem Ziel, Ihre körpereigenen Ressourcen wieder ins Gleichgewicht zu bringen. 
 Für mehr Gesundheit und Lebensqualität"
 heroImage: "/service_osteo.png"
+benefitsIntro: "Viele Patienten berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung."
 benefits:
   - "Unterstützung der Regulationsprozesse im Nervensystem"
   - "Verbesserung der Bewegungsqualität und Flexibilität"
