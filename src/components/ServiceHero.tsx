@@ -13,9 +13,10 @@ export default function ServiceHero({ title, subtitle }: ServiceHeroProps) {
           <h1 className="heading-primary text-4xl lg:text-5xl text-burgundy mb-6">
             {title}
           </h1>
-          <p className="text-burgundy text-lg leading-relaxed max-w-4xl mx-auto">
-            {subtitle}
-          </p>
+          <p 
+            className="text-burgundy text-lg leading-relaxed max-w-4xl mx-auto"
+            dangerouslySetInnerHTML={{ __html: subtitle }}
+          />
         </div>
       </div>
     </section>

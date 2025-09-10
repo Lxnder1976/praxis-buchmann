@@ -49,9 +49,10 @@ export default function TreatmentSteps({ steps }: TreatmentStepsProps) {
                   {step.title}
                 </h3>
                 
-                <p className="body-text text-burgundy leading-relaxed">
-                  {step.description}
-                </p>
+                <p 
+                  className="body-text text-burgundy leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: step.description }}
+                />
               </div>
             </div>
           ))}
