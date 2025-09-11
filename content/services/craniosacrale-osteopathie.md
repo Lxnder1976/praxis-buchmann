@@ -1,9 +1,9 @@
 ---
 title: "Craniosacrale Osteopathie"
-subtitle: "Die craniosakrale Osteopathie ist eine besonders sanfte Form der Osteopathie. Mit fein abgestimmten manuellen Techniken werden Spannungen im Körper aufgespürt und regulierende Impulse gesetzt. Ziel ist es, die Bewegungsqualität und Funktionalität zu verbessern, das Nervensystem zu entlasten und mehr innere Balance zu ermöglichen. <br><br> Jede Behandlung wird individuell abgestimmt, achtsam, respektvoll und mit dem Ziel, Ihre körpereigenen Ressourcen wieder ins Gleichgewicht zu bringen. 
+subtitle: "Die craniosakrale Osteopathie ist eine besonders sanfte Form der Osteopathie. Mit fein abgestimmten manuellen Techniken werden Spannungen im Körper aufgespürt und regulierende Impulse gesetzt. Ziel ist es, die Bewegungsqualität und Funktionalität zu verbessern, das Nervensystem zu entlasten und mehr innere Balance zu ermöglichen. 
 Für mehr Gesundheit und Lebensqualität"
 heroImage: "/service_osteo.png"
-benefitsIntro: "Viele Patienten berichten nach der Behandlung von mehr innerer Ruhe, besserem Schlaf und einer deutlichen Reduktion von Schmerzen oder Anspannung."
+benefitsIntro: "Jede Behandlung wird individuell abgestimmt, achtsam, respektvoll und mit dem Ziel, Ihre körpereigenen Ressourcen wieder ins Gleichgewicht zu bringen. "
 benefits:
   - "Unterstützung der Regulationsprozesse im Nervensystem"
   - "Verbesserung der Bewegungsqualität und Flexibilität"
@@ -21,12 +21,9 @@ treatmentSteps:
   - title: "Nachbesprechung & Empfehlungen"
     description: "Im Anschluss besprechen wir die Behandlung und das weitere Vorgehen. Bei Bedarf erhalten Sie ergänzende Empfehlungen und Übungen, die die Behandlung unterstützen und den Therapieerfolg fördern können"
     color: "burgundy"
-  - title: "Individuelle Behandlung"
-    description: "Durch sanfte, rhythmische Techniken löse ich Verspannungen und unterstütze die natürlichen Regulationsmechanismen Ihres Körpers."
-    color: "coral"
   - title: "Regelmäßige Folgetermine"
     description: "Je nach Befund und individueller Reaktion des Körpers sind weitere Behandlungen in Abständen von ein bis drei Wochen sinnvoll. Wiederholte Behandlungen können dazu beitragen, die erreichten Veränderungen zu stabilisieren und langfristig zu einem verbesserten Funktions- und Beschwerdebild beizutragen."
-    color: "burgundy"
+    color: "coral"
 
 seo:
   title: "Craniosacrale Osteopathie in Wentorf bei Hamburg - Praxis Alexandra Buchmann"
