@@ -2,7 +2,7 @@
 title: "Craniosacrale Osteopathie – Blockaden lösen, Balance finden"
 date: "2025-09-07"
 category: "Osteopathie"
-excerpt: ""
+excerpt: "Sanfte Osteopathie, die Blockaden löst, das Nervensystem beruhigt und die Selbstheilung unterstützt."
 author: "Alexandra Buchmann"
 readTime: "5 Min. Lesezeit"
 ---
