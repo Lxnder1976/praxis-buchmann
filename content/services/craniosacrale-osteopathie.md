@@ -7,7 +7,7 @@ benefitsIntro: "Jede Behandlung wird individuell abgestimmt, achtsam, respektvol
 benefits:
   - "Unterstützung der Regulationsprozesse im Nervensystem"
   - "Verbesserung der Bewegungsqualität und Flexibilität"
-  - "und funktionellen Beschwerden (z. B. im Bereich Kopf, Nacken, Rücken)"
+  - "Linderung bei strukturellen und funktionellen Beschwerden (z. B. im Bereich Kopf, Nacken, Rücken)"
   - "Unterstützung in Phasen erhöhter Belastung, Stress oder Erschöpfung, Burn-Out"
   - "Begleitung nach Verletzungen und bei länger anhaltenden Beschwerden"
   - "Beitrag zu mehr innerer Ruhe, Ausgeglichenheit und Regeneration"
@@ -15,7 +15,7 @@ treatmentSteps:
   - title: "Anamnese & Untersuchung"
     description: "Zu Beginn steht ein ausführliches Gespräch über Ihre Beschwerden und Ihre gesundheitliche Vorgeschichte. Anschließend folgt eine körperliche Untersuchung mit sanften Tests, um Beweglichkeit, Muskelspannung und mögliche Funktionsstörungen zu erfassen."
   - title: "Individuelle Behandlung" 
-    description: "Die Behandlung findet überwiegend im Liegen statt. Jogginghosen oder Leggings sind nicht nur erlaubt, sondern ausdrücklich empfohlen, es darf schön bequem sein.<br> Mit spezifischen, präzise ausgeführten osteopathischen Techniken wird der Körper darin unterstützt, Spannungsmuster und Blockaden zu lösen und die komplexen Steuerungs- und Regenerationsprozesse von Körper und Nervensystemwieder ins Gleichgewicht zu bringen."
+    description: "Die Behandlung findet überwiegend im Liegen statt. Jogginghosen oder Leggings sind nicht nur erlaubt, sondern ausdrücklich empfohlen, es darf schön bequem sein.<br> Mit spezifischen, präzise ausgeführten osteopathischen Techniken wird der Körper darin unterstützt, Spannungsmuster und Blockaden zu lösen und die komplexen Steuerungs- und Regenerationsprozesse von Körper und Nervensystem wieder ins Gleichgewicht zu bringen."
   - title: "Nachbesprechung & Empfehlungen"
     description: "Im Anschluss besprechen wir die Behandlung und das weitere Vorgehen. Bei Bedarf erhalten Sie ergänzende Empfehlungen und Übungen, die die Behandlung unterstützen und den Therapieerfolg fördern können"
   - title: "Regelmäßige Folgetermine"

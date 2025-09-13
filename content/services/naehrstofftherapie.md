@@ -1,6 +1,6 @@
 ---
 title: "Nährstofftherapie"
-subtitle: "Die Nährstofftherapie basiert auf dem gezielten Einsatz von Vitaminen, Mineralstoffen, Spurenelementen und weiteren Mikronährstoffen. Ziel ist es, bestehende Defizite auszugleichen, den Stoffwechsel zu unterstützen und die körpereigenen Funktionen zu stabilisieren. Die Grundlage bilden Ihre Laborwerte, die Anamnese und Ihre persönliche Lebenssituation.<br><br>Jede Therapie wird individuell abgestimmt sorgfältig, fundiert und mit dem Ziel, Ihre gesundheitlichen Ressourcen zu stärken und mehr Wohlbefinden und Energie im Alltag zu ermöglichen."
+subtitle: "Die Nährstofftherapie basiert auf dem gezielten Einsatz von Vitaminen, Mineralstoffen, Spurenelementen und weiteren Mikronährstoffen. Ziel ist es, bestehende Defizite auszugleichen, den Stoffwechsel zu unterstützen und die körpereigenen Funktionen zu stabilisieren. Die Grundlage bilden Ihre Laborwerte, die Anamnese und Ihre persönliche Lebenssituation.<br><br>Jede Therapie wird individuell abgestimmt, sorgfältig, fundiert und mit dem Ziel, Ihre gesundheitlichen Ressourcen zu stärken und mehr Wohlbefinden und Energie im Alltag zu ermöglichen."
 heroImage: "/service_naehrstoffe.webp"
 benefitsIntro: "Individuell abgestimmte Nährstofftherapie kann Ihrem Körper helfen, sein volles Potential zu entfalten. Basierend auf Ihren Laborwerten und persönlichen Bedürfnissen entwickeln wir gemeinsam Ihr optimales Nährstoffkonzept."
 benefits:
@@ -17,7 +17,7 @@ treatmentSteps:
   - title: "Anamnese & Untersuchung"
     description: "Im persönlichen Gespräch erfasse ich Ihre Beschwerden, Lebensgewohnheiten und mögliche Risikofaktoren. Ergänzend können gezielte Laboranalysen durchgeführt werden, um den Nährstoffstatus präzise zu bestimmen."
   - title: "Individuelle Therapie"
-    description: "Die Nährstofftherapie erfolgt in Form von gezielt ausgewählten Präparaten, Infusionen oder Injektionen in individuellen Dosierungen, je nach Befund und individueller Notwendigkeit.<br> So werden die Mikronährstoffe dort verfügbar gemacht, wo sie am besten wirken können.<br>Sie entscheiden selber von welchem Hersteller Sie ihre Supplemente beziehen.Für die Infusionen stehen bewährte Rezepturen oder individuelle Kombinationen zur Verfügung."
+    description: "Die Nährstofftherapie erfolgt in Form von gezielt ausgewählten Präparaten, Infusionen oder Injektionen in individuellen Dosierungen, je nach Befund und individueller Notwendigkeit.<br> So werden die Mikronährstoffe dort verfügbar gemacht, wo sie am besten wirken können.<br>Sie entscheiden selber von welchem Hersteller Sie ihre Supplemente beziehen. Für die Infusionen stehen bewährte Rezepturen oder individuelle Kombinationen zur Verfügung."
   - title: "Empfehlungen"
     description: "Im Anschluss bespreche ich die Ergebnisse mit Ihnen und empfehle ggf. Anpassungen von Ernährung oder Lebensstil. Dadurch kann die Therapie im Alltag optimal unterstützt werden."
   - title: "Regelmäßige Kontrollen"
