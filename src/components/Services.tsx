@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import FadeIn from "./FadeIn";
 
 export default function Services() {
@@ -15,16 +16,18 @@ export default function Services() {
           {/* Health Check */}
           <FadeIn direction="up" delay={100} duration={600}>
             <div className="relative h-full">
-              <div className="w-12 h-12 mx-auto relative -mb-6 z-10 perle-pulse">
-                <Image
-                  src="/Perle_burgund.png"
-                  alt="Burgundy Perle"
-                  width={48}
-                  height={48}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
+              <Link href="/leistungen/health-check" className="block">
+                <div className="w-12 h-12 mx-auto relative -mb-6 z-10 perle-pulse hover:scale-110 transition-transform duration-300 cursor-pointer">
+                  <Image
+                    src="/Perle_burgund.png"
+                    alt="Burgundy Perle"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </Link>
+              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">{}
                 <h3 className="text-2xl font-medium text-burgundy mb-2">Health Check</h3>
                 <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                   GANZHEITLICHE ANALYSE<br />
@@ -40,16 +43,18 @@ export default function Services() {
           {/* Labordiagnostik */}
           <FadeIn direction="up" delay={200} duration={600}>
             <div className="relative h-full">
-              <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
-                <Image
-                  src="/Perle_gold.png"
-                  alt="Gold Perle"
-                  width={48}
-                  height={48}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
+              <Link href="/leistungen/labordiagnostik" className="block">
+                <div className="w-12 h-12 mx-auto relative -mb-6 z-10 hover:scale-110 transition-transform duration-300 cursor-pointer">
+                  <Image
+                    src="/Perle_gold.png"
+                    alt="Gold Perle"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </Link>
+              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">{}
                 <h3 className="text-2xl font-medium text-burgundy mb-2">Labordiagnostik</h3>
                 <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                   FUNDIERTE WERTE.<br />
@@ -66,16 +71,18 @@ export default function Services() {
           {/* Nährstofftherapie */}
           <FadeIn direction="up" delay={150} duration={600}>
             <div className="relative h-full">
-              <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
-                <Image
-                  src="/Perle_gold.png"
-                  alt="Gold Perle"
-                  width={48}
-                  height={48}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
+              <Link href="/leistungen/naehrstofftherapie" className="block">
+                <div className="w-12 h-12 mx-auto relative -mb-6 z-10 hover:scale-110 transition-transform duration-300 cursor-pointer">
+                  <Image
+                    src="/Perle_gold.png"
+                    alt="Gold Perle"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </Link>
+              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">{}
                 <h3 className="text-2xl font-medium text-burgundy mb-2">Nährstofftherapie</h3>
                 <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                   GEZIELTE ENERGIE<br />
@@ -93,16 +100,18 @@ export default function Services() {
           {/* Craniosakrale Osteopathie */}
           <FadeIn direction="up" delay={250} duration={600}>
             <div className="relative h-full">
-              <div className="w-12 h-12 mx-auto relative -mb-6 z-10">
-                <Image
-                  src="/Perle_burgund.png"
-                  alt="Burgundy Perle"
-                  width={48}
-                  height={48}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
+              <Link href="/leistungen/craniosacrale-osteopathie" className="block">
+                <div className="w-12 h-12 mx-auto relative -mb-6 z-10 hover:scale-110 transition-transform duration-300 cursor-pointer">
+                  <Image
+                    src="/Perle_burgund.png"
+                    alt="Burgundy Perle"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </Link>
+              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">{}
                 <h3 className="text-2xl font-medium text-burgundy mb-2">Craniosakrale Osteopathie</h3>
                 <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                   BLOCKADEN LÖSEN.<br />

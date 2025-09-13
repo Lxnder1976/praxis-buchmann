@@ -29,7 +29,7 @@ export default function TreatmentSteps({ steps }: TreatmentStepsProps) {
         </div>
 
         {/* Steps */}
-        <div className="space-y-12">
+        <div className="space-y-16 lg:space-y-20">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               {/* Step Card */}
