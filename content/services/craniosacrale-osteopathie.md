@@ -14,13 +14,10 @@ benefits:
 treatmentSteps:
   - title: "Anamnese & Untersuchung"
     description: "Zu Beginn steht ein ausführliches Gespräch über Ihre Beschwerden und Ihre gesundheitliche Vorgeschichte. Anschließend folgt eine körperliche Untersuchung mit sanften Tests, um Beweglichkeit, Muskelspannung und mögliche Funktionsstörungen zu erfassen."
-    color: "burgundy"
   - title: "Individuelle Behandlung" 
     description: "Die Behandlung findet überwiegend im Liegen statt. Jogginghosen oder Leggings sind nicht nur erlaubt, sondern ausdrücklich empfohlen, es darf schön bequem sein.<br> Mit spezifischen, präzise ausgeführten osteopathischen Techniken wird der Körper darin unterstützt, Spannungsmuster und Blockaden zu lösen und die komplexen Steuerungs- und Regenerationsprozesse von Körper und Nervensystemwieder ins Gleichgewicht zu bringen."
-    color: "coral"
   - title: "Nachbesprechung & Empfehlungen"
     description: "Im Anschluss besprechen wir die Behandlung und das weitere Vorgehen. Bei Bedarf erhalten Sie ergänzende Empfehlungen und Übungen, die die Behandlung unterstützen und den Therapieerfolg fördern können"
-    color: "burgundy"
   - title: "Regelmäßige Folgetermine"
     description: "Je nach Befund und individueller Reaktion des Körpers sind weitere Behandlungen in Abständen von ein bis drei Wochen sinnvoll. Wiederholte Behandlungen können dazu beitragen, die erreichten Veränderungen zu stabilisieren und langfristig zu einem verbesserten Funktions- und Beschwerdebild beizutragen."
     color: "coral"

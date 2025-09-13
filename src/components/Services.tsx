@@ -27,15 +27,23 @@ export default function Services() {
                   />
                 </div>
               </Link>
-              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">{}
+              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
                 <h3 className="text-2xl font-medium text-burgundy mb-2">Health Check</h3>
                 <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                   GANZHEITLICHE ANALYSE<br />
                   FÜR EINEN KLAREN ÜBERBLICK
                 </p>
-                <p className="body-text flex-1">
+                <p className="body-text flex-1 mb-6">
                   Mit moderner Diagnostik (BIA, EKG, HRV), einer ausführlichen Anamnese und einer umfangreichen Vitalparameter-Analyse entsteht ein persönliches Gesundheitsprofil.So können mögliche Risiken frühzeitig sichtbar werden und es entsteht eine fundierte Grundlage für ein individuelles Therapiekonzept.
                 </p>
+                <div className="text-center">
+                  <Link 
+                    href="/leistungen/health-check" 
+                    className="inline-block bg-burgundy text-white px-12 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
+                  >
+                    Mehr Informationen
+                  </Link>
+                </div>
               </div>
             </div>
           </FadeIn>
@@ -54,16 +62,24 @@ export default function Services() {
                   />
                 </div>
               </Link>
-              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">{}
+              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
                 <h3 className="text-2xl font-medium text-burgundy mb-2">Labordiagnostik</h3>
                 <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                   FUNDIERTE WERTE.<br />
                   KLARE ENTSCHEIDUNGEN.
                 </p>
-                <p className="body-text flex-1">
+                <p className="body-text flex-1 mb-6">
                   Ob umfassendes Profil oder gezielte Nährstoffanalysen: Ihre Laborwerte liefern wichtige Hinweise für eine individuelle Einschätzung und können als Grundlage für eine passende Betreuung dienen.
                 Durch die Auswahl spezifischer Parameter können Zusammenhänge sichtbar werden und individuelle Schwerpunkte berücksichtigt werden.  
                 </p>
+                <div className="text-center">
+                  <Link 
+                    href="/leistungen/labordiagnostik" 
+                    className="inline-block bg-burgundy text-white px-12 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
+                  >
+                    Mehr Informationen
+                  </Link>
+                </div>
               </div>
             </div>
           </FadeIn>
@@ -82,17 +98,25 @@ export default function Services() {
                   />
                 </div>
               </Link>
-              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">{}
+              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
                 <h3 className="text-2xl font-medium text-burgundy mb-2">Nährstofftherapie</h3>
                 <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                   GEZIELTE ENERGIE<br />
                   VON INNEN.
                 </p>
-                <p className="body-text flex-1">
+                <p className="body-text flex-1 mb-6">
                   Individuelle Nährstoffkonzepte auf Basis von Laborwerten und Ihren persönlichen Bedürfnissen.
                 Die Therapie kann dabei unterstützen, fehlende Reserven auszugleichen und das innere Gleichgewicht zu fördern.
                 Sie kann zudem einen positiven Einfluss auf Energie, Immunsystem und Regeneration haben.
                 </p>
+                <div className="text-center">
+                  <Link 
+                    href="/leistungen/naehrstofftherapie" 
+                    className="inline-block bg-burgundy text-white px-12 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
+                  >
+                    Mehr Informationen
+                  </Link>
+                </div>
               </div>
             </div>
           </FadeIn>
@@ -111,16 +135,24 @@ export default function Services() {
                   />
                 </div>
               </Link>
-              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">{}
+              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
                 <h3 className="text-2xl font-medium text-burgundy mb-2">Craniosakrale Osteopathie</h3>
                 <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
                   BLOCKADEN LÖSEN.<br />
                   BALANCE FINDEN.
                 </p>
-                <p className="body-text flex-1">
+                <p className="body-text flex-1 mb-6">
                   Sanfte manuelle Techniken können dazu beitragen, Beweglichkeit zu unterstützen und das innere Gleichgewicht zu fördern.
                 Sie können hilfreich sein, um Funktionsstörungen positiv zu beeinflussen, Schmerzen zu lindern und die natürlichen Regenerationsprozesse des Körpers zu unterstützen.
                 </p>
+                <div className="text-center">
+                  <Link 
+                    href="/leistungen/craniosacrale-osteopathie" 
+                    className="inline-block bg-burgundy text-white px-12 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
+                  >
+                    Mehr Informationen
+                  </Link>
+                </div>
               </div>
             </div>
           </FadeIn>

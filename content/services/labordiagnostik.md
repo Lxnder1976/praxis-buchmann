@@ -12,16 +12,12 @@ benefits:
 treatmentSteps:
   - title: "Ausführliche Anamnese"
     description: "Wir nehmen uns viel Zeit für ein persönliches Gespräch. Dabei betrachten wir Ihre Beschwerden, Ihre Lebensumstände und Ihre Gesundheitsziele und ich berate Sie gerne, welche Untersuchungen sinnvoll sind."
-    color: "coral"
   - title: "Probenentnahme"
     description: "Die Blutentnahme erfolgt direkt in meiner Praxis oder unkompliziert bei einem unserer Partnerlabore. Je nach Fragestellung können auch andere Proben sinnvoll sein. Alles wird Ihnen vorab verständlich erklärt und so gestaltet, dass es für Sie unkompliziert bleibt."
-    color: "burgundy"
   - title: "Analyse im Fachlabor"
     description: "Die Proben werden in einem spezialisierten Labor ausgewertet. So entstehen zuverlässige und aussagekräftige Ergebnisse, die wertvolle Hinweise auf mögliche Ursachen Ihrer Beschwerden liefern können."
-    color: "coral"
   - title: "Besprechung der Ergebnisse"
     description: "Wir gehen die Resultate Schritt für Schritt gemeinsam durch. Sie erhalten eine klare und verständliche Erklärung, was die Werte bedeuten, wo die Zusammenhänge liegen und welche Möglichkeiten sich daraus für Ihr weiteres Vorgehen ergeben."
-    color: "burgundy"
 seo:
   title: "Labordiagnostik - Präzise Blutanalysen | Praxis Alexandra Buchmann"
   description: "Umfassende Labordiagnostik mit individueller Parameterauswahl. Von Nährstoffanalysen bis Hormondiagnostik - fundierte Werte für klare Entscheidungen."

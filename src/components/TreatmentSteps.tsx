@@ -3,7 +3,6 @@ import Image from 'next/image';
 interface TreatmentStep {
   title: string;
   description: string;
-  color: 'burgundy' | 'coral';
 }
 
 interface TreatmentStepsProps {

@@ -18,7 +18,7 @@ export default function ServiceBenefits({ benefits, heroImage, title, benefitsIn
         {/* Mobile Layout (bis sm) - Bild direkt über Rosa ohne Padding, eckig */}
         <div className="sm:hidden">
           {/* Mobile Image - eckig, ohne Padding, volle Breite */}
-          <div className="bg-white">
+          <div className="bg-white relative">
             <div className="relative w-full aspect-[4/3]">
               <Image
                 src={heroImage}
@@ -27,6 +27,15 @@ export default function ServiceBenefits({ benefits, heroImage, title, benefitsIn
                 className="object-cover"
                 sizes="100vw"
               />
+              {/* Linie Overlay für Mobile */}
+              <div className="absolute -bottom-3 -left-3 z-10" style={{ width: '100%', height: '100%' }}>
+                <Image
+                  src="/linie_oben.webp"
+                  alt="Dekorative Linie"
+                  fill
+                  className="object-contain object-bottom-left"
+                />
+              </div>
             </div>
           </div>
           
@@ -55,7 +64,7 @@ export default function ServiceBenefits({ benefits, heroImage, title, benefitsIn
         {/* Tablet Layout (sm bis xl) - Wie Mobile: Bild über Text, volle Breite */}
         <div className="hidden sm:block xl:hidden">
           {/* Image - eckig, ohne Padding, volle Breite */}
-          <div className="bg-white">
+          <div className="bg-white relative">
             <div className="relative w-full aspect-[4/3]">
               <Image
                 src={heroImage}
@@ -64,6 +73,15 @@ export default function ServiceBenefits({ benefits, heroImage, title, benefitsIn
                 className="object-cover"
                 sizes="100vw"
               />
+              {/* Linie Overlay für Tablet */}
+              <div className="absolute -bottom-3 -left-3 z-10" style={{ width: '100%', height: '100%' }}>
+                <Image
+                  src="/linie_oben.webp"
+                  alt="Dekorative Linie"
+                  fill
+                  className="object-contain object-bottom-left"
+                />
+              </div>
             </div>
           </div>
           
@@ -103,6 +121,15 @@ export default function ServiceBenefits({ benefits, heroImage, title, benefitsIn
                   className="object-cover rounded-3xl shadow-lg"
                   sizes="50vw"
                 />
+                {/* Linie Overlay für Desktop */}
+                <div className="absolute -bottom-8 -left-10 z-40" style={{ width: '100%', height: '100%' }}>
+                  <Image
+                    src="/linie_oben.webp"
+                    alt="Dekorative Linie"
+                    fill
+                    className="object-contain object-bottom-left"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -132,8 +159,8 @@ export default function ServiceBenefits({ benefits, heroImage, title, benefitsIn
         </div>
       </div>
       
-      {/* Bottom narrow row - cream background */}
-      <div className="bg-cream h-16 md:h-20"></div>
+      {/* Bottom narrow row - white background */}
+      <div className="bg-white h-16 md:h-20"></div>
     </section>
   );
 }
