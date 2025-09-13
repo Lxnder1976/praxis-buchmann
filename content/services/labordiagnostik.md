@@ -8,7 +8,8 @@ benefits:
   - "Hormonhaushalt analysieren - Schilddrüse, Sexualhormone, Stresshormone"
   - "Darmflora untersuchen - Ungleichgewicht im Mikrobiom"
   - "Silent Inflammation nachweisen - unerkannte Entzündungen im Körper"
-  - "Allergien & Unverträglichkeiten abklären - Schwermetallbelastungen erkennen"
+  - "Allergien & Unverträglichkeiten abklären" 
+  - "Schwermetallbelastungen erkennen"
 treatmentSteps:
   - title: "Ausführliche Anamnese"
     description: "Wir nehmen uns viel Zeit für ein persönliches Gespräch. Dabei betrachten wir Ihre Beschwerden, Ihre Lebensumstände und Ihre Gesundheitsziele und ich berate Sie gerne, welche Untersuchungen sinnvoll sind."

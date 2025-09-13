@@ -28,7 +28,7 @@ export default function ServiceBenefits({ benefits, heroImage, title, benefitsIn
                 sizes="100vw"
               />
               {/* Linie Overlay für Mobile */}
-              <div className="absolute -bottom-3 -left-3 z-10" style={{ width: '100%', height: '100%' }}>
+              <div className="absolute -bottom-6 -left-6 z-10" style={{ width: '100%', height: '100%' }}>
                 <Image
                   src="/linie_oben.webp"
                   alt="Dekorative Linie"
