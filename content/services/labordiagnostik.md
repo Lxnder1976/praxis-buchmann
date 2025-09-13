@@ -1,7 +1,7 @@
 ---
 title: "Labordiagnostik"
 subtitle: "Die moderne Labordiagnostik im Sinne der funktionellen Medizin ist wie eine Detektivarbeit für Ihre Gesundheit: Sie hilft uns, verborgenen Ursachen auf die Spur zu kommen und Zusammenhänge sichtbar zu machen, die sonst leicht übersehen werden.Anhand gezielter Laborwerte lässt sich feststellen, ob z.B. der Hormonhaushalt im Gleichgewicht ist, die Nährstoffversorgung ausreichend erfolgt, die Darmflora stabil arbeitet oder ob stille Entzündungen im Körper aktiv sind. Auch mögliche Belastungen durch Schwermetalle, Allergien oder Unverträglichkeiten können so erkannt werden.<br><br>Es geht es darum, Ursachen von chronischen Beschwerden, Energielosigkeit oder unspezifischen Symptomen besser zu verstehen. Die Labordiagnostik betrachtet den Körper in seiner Regulation und zeigt, wo er Unterstützung benötigt."
-heroImage: "/service_labormedizin.png"
+heroImage: "/service_labormedizin.webp"
 benefitsIntro: "Mit einer fundierten Labordiagnostik erhalten Sie einen präzisen Einblick in die Prozesse Ihres Körpers  und damit eine wichtige Grundlage, um Gesundheit und Wohlbefinden gezielt zu fördern."
 benefits:
   - "Nährstoffdefizite erkennen - Vitamine, Mineralstoffe, Spurenelemente"
