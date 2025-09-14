@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/impressum',
     '/agb',
     '/blog', // Blog-Übersichtsseite
+    '/leistungen', // Service-Übersichtsseite
   ];
 
   // Dynamisch alle Blog-Posts aus dem content/blog Verzeichnis laden
@@ -30,7 +31,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     console.warn('Could not read blog directory:', error);
   }
 
-  const allPages = [...staticPages, ...blogPages];
+  // Dynamisch alle Service-Seiten aus dem content/services Verzeichnis laden
+  const servicePages: string[] = [];
+  try {
+    const servicesDir = path.join(process.cwd(), 'content', 'services');
+    if (fs.existsSync(servicesDir)) {
+      const serviceFiles = fs.readdirSync(servicesDir, { withFileTypes: true })
+        .filter(dirent => dirent.isFile() && dirent.name.endsWith('.md'))
+        .map(dirent => `/leistungen/${dirent.name.replace('.md', '')}`);
+      servicePages.push(...serviceFiles);
+    }
+  } catch (error) {
+    console.warn('Could not read services directory:', error);
+  }
+
+  const allPages = [...staticPages, ...blogPages, ...servicePages];
 
   const staticSitemapEntries: MetadataRoute.Sitemap = allPages.map(page => ({
     url: `${baseUrl}${page}`,
