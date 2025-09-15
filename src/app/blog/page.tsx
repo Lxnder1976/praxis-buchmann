@@ -7,6 +7,29 @@ import Header from '@/components/Header';
 export const metadata: Metadata = {
   title: 'Blog - Alexandra Buchmann | Gesundheit & Wohlbefinden',
   description: 'Entdecken Sie wertvolle Tipps und Einblicke zu funktioneller Medizin, Osteopathie und ganzheitlicher Gesundheit von Alexandra Buchmann.',
+  metadataBase: new URL('https://praxis-buchmann.info'),
+  openGraph: {
+    title: 'Blog - Alexandra Buchmann | Gesundheit & Wohlbefinden',
+    description: 'Entdecken Sie wertvolle Tipps und Einblicke zu funktioneller Medizin, Osteopathie und ganzheitlicher Gesundheit von Alexandra Buchmann.',
+    url: 'https://praxis-buchmann.info/blog',
+    siteName: 'Praxis Alexandra Buchmann',
+    images: [
+      {
+        url: '/logo.webp',
+        width: 800,
+        height: 600,
+        alt: 'Praxis Alexandra Buchmann Blog',
+      },
+    ],
+    locale: 'de_DE',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog - Alexandra Buchmann | Gesundheit & Wohlbefinden',
+    description: 'Entdecken Sie wertvolle Tipps und Einblicke zu funktioneller Medizin, Osteopathie und ganzheitlicher Gesundheit.',
+    images: ['/logo.webp'],
+  },
 };
 
 function formatDate(dateString: string): string {

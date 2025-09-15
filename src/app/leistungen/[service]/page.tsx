@@ -31,12 +31,18 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     };
   }
 
+  const baseUrl = 'https://praxis-buchmann.info';
+  const serviceUrl = `${baseUrl}/leistungen/${serviceSlug}`;
+
   return {
     title: service.seo.title,
     description: service.seo.description,
+    metadataBase: new URL(baseUrl),
     openGraph: {
       title: service.seo.title,
       description: service.seo.description,
+      url: serviceUrl,
+      siteName: 'Praxis Alexandra Buchmann',
       images: [
         {
           url: service.heroImage,
@@ -45,6 +51,14 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
           alt: service.title,
         },
       ],
+      locale: 'de_DE',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: service.seo.title,
+      description: service.seo.description,
+      images: [service.heroImage],
     },
   };
 }

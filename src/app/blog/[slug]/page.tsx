@@ -28,15 +28,36 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
 
+  const baseUrl = 'https://praxis-buchmann.info';
+  const heroImageUrl = `${baseUrl}/content/blog/${slug}/hero.jpg`;
+
   return {
     title: `${post.title} - Alexandra Buchmann Blog`,
     description: post.excerpt,
+    metadataBase: new URL(baseUrl),
     openGraph: {
       title: post.title,
       description: post.excerpt,
+      url: `${baseUrl}/blog/${slug}`,
+      siteName: 'Praxis Alexandra Buchmann',
+      images: [
+        {
+          url: heroImageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+      locale: 'de_DE',
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [heroImageUrl],
     },
   };
 }
