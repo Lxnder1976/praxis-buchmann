@@ -7,11 +7,11 @@ import Header from '@/components/Header';
 export const metadata: Metadata = {
   title: 'Blog - Alexandra Buchmann | Gesundheit & Wohlbefinden',
   description: 'Entdecken Sie wertvolle Tipps und Einblicke zu funktioneller Medizin, Osteopathie und ganzheitlicher Gesundheit von Alexandra Buchmann.',
-  metadataBase: new URL('https://praxis-buchmann.info'),
+  metadataBase: new URL('https://www.praxis-buchmann.info'),
   openGraph: {
     title: 'Blog - Alexandra Buchmann | Gesundheit & Wohlbefinden',
     description: 'Entdecken Sie wertvolle Tipps und Einblicke zu funktioneller Medizin, Osteopathie und ganzheitlicher Gesundheit von Alexandra Buchmann.',
-    url: 'https://praxis-buchmann.info/blog',
+    url: 'https://www.praxis-buchmann.info/blog',
     siteName: 'Praxis Alexandra Buchmann',
     images: [
       {

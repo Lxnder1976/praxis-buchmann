@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
 
-  const baseUrl = 'https://praxis-buchmann.info';
+  const baseUrl = 'https://www.praxis-buchmann.info';
   const heroImageUrl = `${baseUrl}/content/blog/${slug}/hero.jpg`;
 
   return {

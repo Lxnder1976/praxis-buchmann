@@ -22,11 +22,11 @@ const playfairDisplay = Playfair_Display({
 export const metadata: Metadata = {
   title: "Alexandra Buchmann - Osteopathie und funktionelle Medizin Wentorf",
   description: "Praxis Alexandra Buchmann - Osteopathie und funktionelle Medizin in Wentorf. Ganzheitliche Behandlung für Ihre Gesundheit. Termin online buchen.",
-  metadataBase: new URL('https://praxis-buchmann.info'),
+  metadataBase: new URL('https://www.praxis-buchmann.info'),
   openGraph: {
     title: "Alexandra Buchmann - Osteopathie und funktionelle Medizin",
     description: "Heilpraktikerin Alexandra Buchmann verbindet Labormedizin mit einem ganzheitlichen Ansatz: funktionelle Medizin, craniosakrale Osteopathie und personalisierte Nährstofftherapie.",
-    url: 'https://praxis-buchmann.info',
+    url: 'https://www.praxis-buchmann.info',
     siteName: 'Praxis Alexandra Buchmann',
     images: [
       {

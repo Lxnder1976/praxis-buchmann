@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     };
   }
 
-  const baseUrl = 'https://praxis-buchmann.info';
+  const baseUrl = 'https://www.praxis-buchmann.info';
   const serviceUrl = `${baseUrl}/leistungen/${serviceSlug}`;
 
   return {
