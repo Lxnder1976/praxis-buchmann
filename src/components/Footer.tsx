@@ -171,7 +171,12 @@ export default function Footer() {
           <h3 className="heading-secondary text-2xl text-burgundy mb-8">Mitglied im</h3>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-16">
             {/* Europäische Gesellschaft Funktionelle Medizin */}
-            <div className="flex flex-col items-center">
+            <a 
+              href="https://egfm.eu/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex flex-col items-center hover:opacity-80 transition-opacity"
+            >
               <div className="mb-4">
                 <Image
                   src="/egfm_logo.png"
@@ -181,13 +186,18 @@ export default function Footer() {
                   className="w-auto h-20 object-contain"
                 />
               </div>
-              <p className="text-sm text-burgundy font-medium text-center leading-tight">
+              <p className="text-sm text-burgundy font-medium text-center leading-tight hover:text-coral transition-colors">
                 Europäische Gesellschaft<br />Funktionelle Medizin e.V.
               </p>
-            </div>
+            </a>
             
             {/* Verband Freier Osteopathen */}
-            <div className="flex flex-col items-center">
+            <a 
+              href="https://www.vfo.de/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex flex-col items-center hover:opacity-80 transition-opacity"
+            >
               <div className="mb-4">
                 <Image
                   src="/logo-verband-freier-osteopathen.webp"
@@ -197,10 +207,10 @@ export default function Footer() {
                   className="w-auto h-20 object-contain"
                 />
               </div>
-              <p className="text-sm text-burgundy font-medium text-center leading-tight">
+              <p className="text-sm text-burgundy font-medium text-center leading-tight hover:text-coral transition-colors">
                 Verband Freier<br />Osteopathen e.V.
               </p>
-            </div>
+            </a>
           </div>
         </div>
         
