@@ -166,6 +166,44 @@ export default function Footer() {
           </div>
         </div>
         
+        {/* Verbandsmitgliedschaften */}
+        <div className="text-center mb-12">
+          <h3 className="heading-secondary text-2xl text-burgundy mb-8">Mitglied im</h3>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-16">
+            {/* Europäische Gesellschaft Funktionelle Medizin */}
+            <div className="flex flex-col items-center">
+              <div className="mb-4">
+                <Image
+                  src="/egfm_logo.png"
+                  alt="EGFM Logo"
+                  width={120}
+                  height={80}
+                  className="w-auto h-20 object-contain"
+                />
+              </div>
+              <p className="text-sm text-burgundy font-medium text-center leading-tight">
+                Europäische Gesellschaft<br />Funktionelle Medizin e.V.
+              </p>
+            </div>
+            
+            {/* Verband Freier Osteopathen */}
+            <div className="flex flex-col items-center">
+              <div className="mb-4">
+                <Image
+                  src="/logo-verband-freier-osteopathen.webp"
+                  alt="VFO Logo"
+                  width={120}
+                  height={80}
+                  className="w-auto h-20 object-contain"
+                />
+              </div>
+              <p className="text-sm text-burgundy font-medium text-center leading-tight">
+                Verband Freier<br />Osteopathen e.V.
+              </p>
+            </div>
+          </div>
+        </div>
+        
         {/* Kontaktinformationen - zentriert in einer Zeile */}
         <div className="text-center mb-8">
           <p className="body-text text-burgundy">
