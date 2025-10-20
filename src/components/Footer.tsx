@@ -217,7 +217,7 @@ export default function Footer() {
         {/* Kontaktinformationen - zentriert in einer Zeile */}
         <div className="text-center mb-8">
           <p className="body-text text-burgundy">
-            <strong>Alexandra Buchmann</strong> • <strong>Praxis für funktionelle Medizin und Osteopathie</strong>
+            <strong>Alexandra Buchmann</strong> • <strong>Heilpraktikerin und Osteopathin</strong> • <strong>Praxis für Osteopathie und funktionelle Medizin</strong>
           </p>
           <p className="body-text text-text-gray mt-2">
             Zwischen den Toren 3 • 21465 Wentorf • 2. Stock (Zugang barrierefrei) • 040 607 763 460 • alexandra@praxis-buchmann.info
