@@ -1,6 +1,6 @@
 ---
 title: "Die Schilddrüse – das kleine Organ mit großer Wirkung"  
-date: "2025-09-30"  
+date: "2025-10-08"  
 category: "Gesundheit"  
 excerpt: "Sie wiegt nur 20 Gramm, beeinflusst aber fast jede Zelle im Körper: die Schilddrüse. Erfahre, warum sie so wichtig ist, wie sie funktioniert und was passiert, wenn sie aus dem Gleichgewicht gerät."  
 author: "Alexandra Buchmann"  
