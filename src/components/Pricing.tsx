@@ -21,7 +21,7 @@ export default function Pricing() {
               <div className="space-y-3">
                 <div className="flex justify-between items-start">
                   <span className="body-text text-left">
-                    Craniosakrale Osteopathie <span className="hidden md:inline">(60 Min.)</span>
+                    Craniosakrale Osteopathie 
                   </span>
                   <span className="font-medium whitespace-nowrap">120,00&nbsp;€</span>
                 </div>
@@ -31,13 +31,10 @@ export default function Pricing() {
                   </span>
                   <span className="font-medium whitespace-nowrap">280,00&nbsp;€</span>
                 </div>
+                
                 <div className="flex justify-between items-start">
-                  <span className="body-text text-left">Health Check + Labordiagnostik<sup>*</sup></span>
-                  <span className="font-medium whitespace-nowrap">350,00&nbsp;€</span>
-                </div>
-                <div className="flex justify-between items-start">
-                  <span className="body-text text-left">Nährstofftherapie + Labordiagnostik<sup>*</sup></span>
-                  <span className="font-medium whitespace-nowrap">250,00&nbsp;€</span>
+                  <span className="body-text text-left">Nährstofftherapie<sup>*</sup></span>
+                  <span className="font-medium whitespace-nowrap">180,00&nbsp;€</span>
                 </div>
 
                 <div className="flex justify-between items-start">
@@ -46,10 +43,24 @@ export default function Pricing() {
                   </span>
                   <span className="font-medium whitespace-nowrap">ab 65,00&nbsp;€</span>
                 </div>
+
+                <div className="flex justify-between items-start">
+                  <span className="body-text text-left">
+                    Labordiagnostik<sup>*</sup> (Beratung, Auswertung, Empfehlung)
+                  </span>
+                  <span className="font-medium whitespace-nowrap">150,00&nbsp;€</span>
+                </div>
+
+                <div className="flex justify-between items-start">
+                  <span className="body-text text-left">
+                    Sofortdiagnostik (Vitamin D, HbA1c, Lipidprofil)
+                  </span>
+                  <span className="font-medium whitespace-nowrap">je 45,00&nbsp;€</span>
+                </div>
               </div>
               
               <p className="body-text text-xs mt-4 text-gray-600">
-                *Die Kosten für die Labordiagnostik (z. B. Blutentnahme und Laboruntersuchungen) richten sich nach dem tatsächlichen Aufwand und werden vom beauftragten Labor in Rechnung gestellt. Sie erhalten eine detaillierte Laborabrechnung basierend auf den getesteten Werten.                
+                *Die Laboruntersuchungen wird vom beauftragten Labor in Rechnung gestellt. Sie erhalten eine detaillierte Laborabrechnung basierend auf den getesteten Werten.                
               </p>
             </div>
           </div>
