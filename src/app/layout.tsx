@@ -93,7 +93,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               "addressCountry": "DE"
             },
             "hasMap": "https://www.google.com/maps?q=Zwischen+den+Toren+3,+21465+Wentorf+bei+Hamburg",
-            "areaServed": ["Wentorf bei Hamburg", "Reinbek", "Hamburg-Bergedorf"],
+            "sameAs": [
+              "https://instagram.com/praxis.buchmann",
+              "https://maps.app.goo.gl/nxrBhYu8VYjhgpLb8"
+            ],
+            "areaServed": ["Wentorf bei Hamburg", "Reinbek", "Hamburg-Bergedorf", "Börnsen", "Geesthacht", "Glinde", "Aumühle"],
             "priceRange": "$$",
             "knowsAbout": [
               "Funktionelle Medizin",
