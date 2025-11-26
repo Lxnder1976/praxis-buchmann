@@ -98,7 +98,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               "https://maps.app.goo.gl/nxrBhYu8VYjhgpLb8"
             ],
             "areaServed": ["Wentorf bei Hamburg", "Reinbek", "Hamburg-Bergedorf", "Börnsen", "Geesthacht", "Glinde", "Aumühle"],
-            "priceRange": "$$",
+            "priceRange": "120€-280€",
             "knowsAbout": [
               "Funktionelle Medizin",
               "Osteopathie",
