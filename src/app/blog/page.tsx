@@ -1,8 +1,9 @@
-import { getAllBlogPosts } from '@/lib/blog';
+import { getPaginatedBlogPosts } from '@/lib/blog';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import Header from '@/components/Header';
+import Pagination from '@/components/Pagination';
 
 export const metadata: Metadata = {
   title: 'Blog - Alexandra Buchmann | Gesundheit & Wohlbefinden',
@@ -42,7 +43,7 @@ function formatDate(dateString: string): string {
 }
 
 export default function BlogPage() {
-  const posts = getAllBlogPosts();
+  const { posts, totalPages, currentPage } = getPaginatedBlogPosts(1);
 
   return (
     <div className="min-h-screen bg-white">
@@ -122,6 +123,9 @@ export default function BlogPage() {
               ))}
             </div>
           )}
+          
+          {/* Pagination */}
+          <Pagination currentPage={currentPage} totalPages={totalPages} />
         </div>
       </section>
     </div>

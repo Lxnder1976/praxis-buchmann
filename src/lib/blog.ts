@@ -44,6 +44,8 @@ export function getAllBlogSlugs(): string[] {
   });
 }
 
+export const POSTS_PER_PAGE = 10;
+
 export function getAllBlogPosts(): BlogPostMetadata[] {
   const slugs = getAllBlogSlugs();
   const allPostsData = slugs.map((slug) => {
@@ -58,6 +60,32 @@ export function getAllBlogPosts(): BlogPostMetadata[] {
       return -1;
     }
   });
+}
+
+export function getPaginatedBlogPosts(page: number): {
+  posts: BlogPostMetadata[];
+  totalPages: number;
+  currentPage: number;
+  totalPosts: number;
+} {
+  const allPosts = getAllBlogPosts();
+  const totalPosts = allPosts.length;
+  const totalPages = Math.ceil(totalPosts / POSTS_PER_PAGE);
+  const startIndex = (page - 1) * POSTS_PER_PAGE;
+  const posts = allPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+  
+  return {
+    posts,
+    totalPages,
+    currentPage: page,
+    totalPosts,
+  };
+}
+
+export function getAllPageNumbers(): number[] {
+  const allPosts = getAllBlogPosts();
+  const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
+  return Array.from({ length: totalPages }, (_, i) => i + 1);
 }
 
 export function getBlogPostMetadata(slug: string): BlogPostMetadata | null {
