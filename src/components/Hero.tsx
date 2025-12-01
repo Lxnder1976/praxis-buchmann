@@ -44,27 +44,29 @@ export default function Hero() {
           {/* Text rechts */}
           <div className="space-y-6 text-center">
             {/* Kerze über der Überschrift */}
-            <div className="flex justify-center -mb-4">
-              <Image
-                src="/kerze.webp"
-                alt="Adventskerze"
-                width={120}
-                height={160}
-                className="h-32 w-auto"
-              />
-            </div>
+            <FadeIn direction="down" mobileDirection="down" delay={0} duration={800}>
+              <div className="flex justify-center -mb-4">
+                <Image
+                  src="/kerze.webp"
+                  alt="Adventskerze"
+                  width={120}
+                  height={160}
+                  className="h-32 w-auto"
+                />
+              </div>
+            </FadeIn>
             
             <FadeIn direction="right" mobileDirection="up" delay={200} duration={800}>
               <h1 className="heading-primary text-4xl lg:text-5xl text-burgundy">
-                Für mehr<br />
-                Gesundheit und<br />
-                Lebensqualität
+                Praxis für Osteopathie &<br />
+                Funktionelle Medizin<br />
+                in Wentorf
               </h1>
             </FadeIn>
             
             <FadeIn direction="right" mobileDirection="up" delay={400} duration={800}>
               <p className="body-text text-lg">
-                Es ist mir eine Freude, Sie in meiner Praxis für funktionelle Medizin und Osteopathie in Wentorf bei Hamburg zu begrüßen.
+                Herzlich willkommen. Es ist mir eine Freude, Sie auf Ihrem Weg zu mehr Gesundheit und Lebensqualität zu begleiten.
               </p>
             </FadeIn>
             
