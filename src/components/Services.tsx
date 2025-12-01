@@ -13,14 +13,50 @@ export default function Services() {
         </FadeIn>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-y-12 md:auto-rows-fr">
-          {/* Health Check */}
+          {/* Craniosakrale Osteopathie */}
           <FadeIn direction="up" delay={100} duration={600}>
+            <div className="relative h-full">
+              <Link href="/leistungen/craniosacrale-osteopathie" className="block">
+                <div className="w-12 h-12 mx-auto relative -mb-6 z-10 hover:scale-110 transition-transform duration-300 cursor-pointer">
+                  <Image
+                    src="/Perle_burgund.png"
+                    alt="Burgundy Perle"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </Link>
+              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
+                <h3 className="text-2xl font-medium text-burgundy mb-2">Craniosakrale Osteopathie</h3>
+                <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
+                  BLOCKADEN LÖSEN.<br />
+                  BALANCE FINDEN.
+                </p>
+                <p className="body-text flex-1 mb-6">
+                  Sanfte manuelle Techniken können dazu beitragen, Beweglichkeit zu unterstützen und das innere Gleichgewicht zu fördern.
+                Sie können hilfreich sein, um Funktionsstörungen positiv zu beeinflussen, Schmerzen zu lindern und die natürlichen Regenerationsprozesse des Körpers zu unterstützen.
+                </p>
+                <div className="text-center">
+                  <Link 
+                    href="/leistungen/craniosacrale-osteopathie" 
+                    className="inline-block bg-burgundy text-white px-12 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
+                  >
+                    Mehr Informationen
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* Health Check */}
+          <FadeIn direction="up" delay={200} duration={600}>
             <div className="relative h-full">
               <Link href="/leistungen/health-check" className="block">
                 <div className="w-12 h-12 mx-auto relative -mb-6 z-10 perle-pulse hover:scale-110 transition-transform duration-300 cursor-pointer">
                   <Image
-                    src="/Perle_burgund.png"
-                    alt="Burgundy Perle"
+                    src="/Perle_gold.png"
+                    alt="Gold Perle"
                     width={48}
                     height={48}
                     className="w-full h-full object-contain"
@@ -49,7 +85,7 @@ export default function Services() {
           </FadeIn>
           
           {/* Labordiagnostik */}
-          <FadeIn direction="up" delay={200} duration={600}>
+          <FadeIn direction="up" delay={150} duration={600}>
             <div className="relative h-full">
               <Link href="/leistungen/labordiagnostik" className="block">
                 <div className="w-12 h-12 mx-auto relative -mb-6 z-10 hover:scale-110 transition-transform duration-300 cursor-pointer">
@@ -85,13 +121,13 @@ export default function Services() {
           </FadeIn>
           
           {/* Nährstofftherapie */}
-          <FadeIn direction="up" delay={150} duration={600}>
+          <FadeIn direction="up" delay={250} duration={600}>
             <div className="relative h-full">
               <Link href="/leistungen/naehrstofftherapie" className="block">
                 <div className="w-12 h-12 mx-auto relative -mb-6 z-10 hover:scale-110 transition-transform duration-300 cursor-pointer">
                   <Image
-                    src="/Perle_gold.png"
-                    alt="Gold Perle"
+                    src="/Perle_burgund.png"
+                    alt="Burgundy Perle"
                     width={48}
                     height={48}
                     className="w-full h-full object-contain"
@@ -112,42 +148,6 @@ export default function Services() {
                 <div className="text-center">
                   <Link 
                     href="/leistungen/naehrstofftherapie" 
-                    className="inline-block bg-burgundy text-white px-12 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
-                  >
-                    Mehr Informationen
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </FadeIn>
-          
-          {/* Craniosakrale Osteopathie */}
-          <FadeIn direction="up" delay={250} duration={600}>
-            <div className="relative h-full">
-              <Link href="/leistungen/craniosacrale-osteopathie" className="block">
-                <div className="w-12 h-12 mx-auto relative -mb-6 z-10 hover:scale-110 transition-transform duration-300 cursor-pointer">
-                  <Image
-                    src="/Perle_burgund.png"
-                    alt="Burgundy Perle"
-                    width={48}
-                    height={48}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </Link>
-              <div className="service-card bg-new-cream p-8 pt-12 rounded-3xl text-center h-full flex flex-col">
-                <h3 className="text-2xl font-medium text-burgundy mb-2">Craniosakrale Osteopathie</h3>
-                <p className="text-sm text-burgundy uppercase tracking-wider mb-4">
-                  BLOCKADEN LÖSEN.<br />
-                  BALANCE FINDEN.
-                </p>
-                <p className="body-text flex-1 mb-6">
-                  Sanfte manuelle Techniken können dazu beitragen, Beweglichkeit zu unterstützen und das innere Gleichgewicht zu fördern.
-                Sie können hilfreich sein, um Funktionsstörungen positiv zu beeinflussen, Schmerzen zu lindern und die natürlichen Regenerationsprozesse des Körpers zu unterstützen.
-                </p>
-                <div className="text-center">
-                  <Link 
-                    href="/leistungen/craniosacrale-osteopathie" 
                     className="inline-block bg-burgundy text-white px-12 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
                   >
                     Mehr Informationen
