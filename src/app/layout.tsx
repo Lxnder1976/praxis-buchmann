@@ -4,6 +4,7 @@ import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import AsyncCSS from "@/components/AsyncCSS";
+import SnowEffect from "@/components/SnowEffect";
 
 const krub = Krub({
   variable: "--font-krub",
@@ -179,6 +180,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </a>
         
         <AsyncCSS />
+        <SnowEffect />
         {children}
         <CookieBanner />
       </body>

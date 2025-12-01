@@ -43,6 +43,17 @@ export default function Hero() {
           
           {/* Text rechts */}
           <div className="space-y-6 text-center">
+            {/* Kerze über der Überschrift */}
+            <div className="flex justify-center -mb-4">
+              <Image
+                src="/kerze.webp"
+                alt="Adventskerze"
+                width={120}
+                height={160}
+                className="h-32 w-auto"
+              />
+            </div>
+            
             <FadeIn direction="right" mobileDirection="up" delay={200} duration={800}>
               <h1 className="heading-primary text-4xl lg:text-5xl text-burgundy">
                 Für mehr<br />
