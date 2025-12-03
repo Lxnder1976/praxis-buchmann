@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/impressum',
     '/agb',
     '/blog', // Blog-Übersichtsseite
-    '/leistungen', // Service-Übersichtsseite
   ];
 
   // Dynamisch alle Blog-Posts aus dem content/blog Verzeichnis laden
