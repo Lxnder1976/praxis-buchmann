@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from 'next';
+import GoogleAdsConversion from "@/components/GoogleAdsConversion";
 
 export const metadata: Metadata = {
   title: 'Termin bestätigt - Alexandra Buchmann',
@@ -13,6 +14,9 @@ export const metadata: Metadata = {
 export default function TerminBestaetigt() {
   return (
     <div className="min-h-screen bg-new-cream">
+      {/* Google Ads Conversion Tracking */}
+      <GoogleAdsConversion />
+      
       {/* Simple Header ohne Navigation */}
       <header className="bg-new-cream py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
