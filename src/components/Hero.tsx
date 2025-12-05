@@ -43,12 +43,12 @@ export default function Hero() {
           
           {/* Text rechts */}
           <div className="space-y-6 text-center">
-            {/* Kerze über der Überschrift */}
+            {/* Weihnachtsdekoration über der Überschrift */}
             <FadeIn direction="down" mobileDirection="down" delay={0} duration={800}>
               <div className="flex justify-center -mb-4">
                 <Image
-                  src="/kerze.webp"
-                  alt="Adventskerze"
+                  src="/christbaumkugel.webp"
+                  alt="Weihnachtskugel"
                   width={120}
                   height={160}
                   className="h-32 w-auto"
