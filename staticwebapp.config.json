@@ -8,9 +8,34 @@
   "platform": {
     "apiRuntime": "node:18"
   },
-  "routes": [],
+  "routes": [
+    {
+      "route": "/_next/static/chunks/*.js",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "route": "/_next/static/css/*.css",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "route": "/*.html",
+      "headers": {
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "route": "/",
+      "headers": {
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    }
+  ],
   "globalHeaders": {
-    "cache-control": "public, max-age=31536000, immutable"
+    "cache-control": "public, max-age=3600"
   },
   "mimeTypes": {
     ".webp": "image/webp"
