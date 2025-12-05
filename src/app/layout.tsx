@@ -5,6 +5,7 @@ import CookieBanner from "@/components/CookieBanner";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import AsyncCSS from "@/components/AsyncCSS";
 import SnowEffect from "@/components/SnowEffect";
+import MobileBookingButton from "@/components/MobileBookingButton";
 
 const krub = Krub({
   variable: "--font-krub",
@@ -192,6 +193,7 @@ gtag('config', 'AW-17557359184');`
         <AsyncCSS />
         <SnowEffect />
         {children}
+        <MobileBookingButton />
         <CookieBanner />
       </body>
     </html>

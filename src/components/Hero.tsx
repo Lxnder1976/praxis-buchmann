@@ -70,17 +70,19 @@ export default function Hero() {
               </p>
             </FadeIn>
             
-            <FadeIn direction="up" mobileDirection="up" delay={600} duration={800}>
-              <a 
-                href="https://www.appointmed.com/booking/2399598-alexandra-buchmann"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-burgundy inline-block"
-                aria-label="Termin buchen (öffnet in neuem Fenster)"
-              >
-                TERMIN BUCHEN
-              </a>
-            </FadeIn>
+            <div className="hidden md:block">
+              <FadeIn direction="up" mobileDirection="up" delay={600} duration={800}>
+                <a 
+                  href="https://www.appointmed.com/booking/2399598-alexandra-buchmann"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-burgundy inline-block"
+                  aria-label="Termin buchen (öffnet in neuem Fenster)"
+                >
+                  TERMIN BUCHEN
+                </a>
+              </FadeIn>
+            </div>
           </div>
         </div>
       </div>
