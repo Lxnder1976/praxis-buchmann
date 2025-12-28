@@ -10,6 +10,7 @@
     "build-blog": "./build-blog.sh"
   },
   "dependencies": {
+    "@fireworks-js/react": "^2.10.8",
     "gray-matter": "^4.0.3",
     "next": "15.4.6",
     "react": "19.1.0",

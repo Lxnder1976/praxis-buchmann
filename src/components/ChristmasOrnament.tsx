@@ -3,27 +3,43 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import FadeIn from "./FadeIn";
-import { isChristmasSeason } from "@/utils/christmas";
+import { getSeasonalOrnament, SeasonalOrnament } from "@/utils/christmas";
 
 export default function ChristmasOrnament() {
-  const [isChristmas, setIsChristmas] = useState(false);
+  const [ornament, setOrnament] = useState<SeasonalOrnament>(null);
 
   useEffect(() => {
-    setIsChristmas(isChristmasSeason());
+    setOrnament(getSeasonalOrnament());
   }, []);
 
-  // Nur während der Weihnachtszeit anzeigen (1. - 26. Dezember)
-  if (!isChristmas) return null;
+  // Nichts anzeigen wenn keine Saison aktiv
+  if (!ornament) return null;
+
+  // Konfiguration je nach Saison
+  const config = {
+    christmas: {
+      src: "/christbaumkugel.webp",
+      alt: "Weihnachtskugel",
+      className: "h-32 w-auto",
+    },
+    newyear: {
+      src: "/hufeisen.webp",
+      alt: "Hufeisen für Glück im neuen Jahr",
+      className: "h-28 w-auto",
+    },
+  };
+
+  const { src, alt, className } = config[ornament];
 
   return (
     <FadeIn direction="down" mobileDirection="down" delay={0} duration={800}>
       <div className="flex justify-center -mb-4">
         <Image
-          src="/christbaumkugel.webp"
-          alt="Weihnachtskugel"
+          src={src}
+          alt={alt}
           width={120}
           height={160}
-          className="h-32 w-auto"
+          className={className}
         />
       </div>
     </FadeIn>
