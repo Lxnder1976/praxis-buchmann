@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState, useEffect } from "react";
+import { isChristmasSeason } from "@/utils/christmas";
 
 interface Snowflake {
   id: number;
@@ -13,9 +14,11 @@ interface Snowflake {
 
 export default function SnowEffect() {
   const [mounted, setMounted] = useState(false);
+  const [isChristmas, setIsChristmas] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    setIsChristmas(isChristmasSeason());
   }, []);
 
   const snowflakes = useMemo(() => {
@@ -42,7 +45,8 @@ export default function SnowEffect() {
     return flakes;
   }, [mounted]);
 
-  if (!mounted) return null;
+  // Nur während der Weihnachtszeit anzeigen (1. - 26. Dezember)
+  if (!mounted || !isChristmas) return null;
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-50">
