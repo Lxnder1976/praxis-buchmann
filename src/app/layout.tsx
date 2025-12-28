@@ -7,7 +7,6 @@ import AsyncCSS from "@/components/AsyncCSS";
 import SnowEffect from "@/components/SnowEffect";
 import FireworksEffect from "@/components/FireworksEffect";
 import PetalEffect from "@/components/PetalEffect";
-import PetalEffectParticles from "@/components/PetalEffectParticles";
 import MobileBookingButton from "@/components/MobileBookingButton";
 
 const krub = Krub({
@@ -196,9 +195,7 @@ gtag('config', 'AW-17557359184');`
         <AsyncCSS />
         <SnowEffect />
         <FireworksEffect />
-        {/* Variante 1 (selbst gebaut) mit Blütenform */}
         <PetalEffect />
-        {/* <PetalEffectParticles /> */}
         {children}
         <MobileBookingButton />
         <CookieBanner />
