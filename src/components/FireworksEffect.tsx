@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Fireworks } from "@fireworks-js/react";
-import { isFireworksSeason } from "@/utils/christmas";
+import { isFireworksSeason } from "@/utils/seasons";
 
 export default function FireworksEffect() {
   const [mounted, setMounted] = useState(false);

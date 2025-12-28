@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import FadeIn from "./FadeIn";
-import { getSeasonalOrnament, SeasonalOrnament } from "@/utils/christmas";
+import { getSeasonalOrnament, type SeasonalOrnament as SeasonalOrnamentType } from "@/utils/seasons";
 
-export default function ChristmasOrnament() {
-  const [ornament, setOrnament] = useState<SeasonalOrnament>(null);
+export default function SeasonalOrnament() {
+  const [ornament, setOrnament] = useState<SeasonalOrnamentType>(null);
 
   useEffect(() => {
     setOrnament(getSeasonalOrnament());
@@ -26,6 +26,11 @@ export default function ChristmasOrnament() {
       src: "/hufeisen.webp",
       alt: "Hufeisen für Glück im neuen Jahr",
       className: "h-28 w-auto",
+    },
+    easter: {
+      src: "/ostern.webp",
+      alt: "Frohe Ostern",
+      className: "h-32 w-auto",
     },
   };
 

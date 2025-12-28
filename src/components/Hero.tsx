@@ -1,6 +1,6 @@
 import Image from "next/image";
 import FadeIn from "./FadeIn";
-import ChristmasOrnament from "./ChristmasOrnament";
+import SeasonalOrnament from "./SeasonalOrnament";
 
 export default function Hero() {
   return (
@@ -44,8 +44,8 @@ export default function Hero() {
           
           {/* Text rechts */}
           <div className="space-y-6 text-center">
-            {/* Weihnachtsdekoration über der Überschrift - nur 1.-26. Dezember */}
-            <ChristmasOrnament />
+            {/* Saisonale Dekoration über der Überschrift */}
+            <SeasonalOrnament />
             
             <FadeIn direction="right" mobileDirection="up" delay={200} duration={800}>
               <h1 className="heading-primary text-4xl lg:text-5xl text-burgundy">

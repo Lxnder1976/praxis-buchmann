@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState, useEffect } from "react";
-import { isChristmasSeason } from "@/utils/christmas";
+import { isChristmasSeason } from "@/utils/seasons";
 
 interface Snowflake {
   id: number;
