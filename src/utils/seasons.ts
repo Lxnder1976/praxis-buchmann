@@ -60,28 +60,28 @@ export function isChristmasSeason(): boolean {
 
 /**
  * Prüft, ob das aktuelle Datum in der Neujahrszeit liegt
- * Neujahrszeit: 31. Dezember bis 12. Januar (Hufeisen)
+ * Neujahrszeit: 1. Januar (Hufeisen)
  */
 export function isNewYearSeason(): boolean {
   const now = new Date();
   const month = now.getMonth(); // 0-11
   const day = now.getDate();
   
-  // 31. Dezember ODER 1.-12. Januar
-  return (month === 11 && day === 31) || (month === 0 && day <= 12);
+  // Nur am 1. Januar
+  return month === 0 && day === 1;
 }
 
 /**
  * Prüft, ob das aktuelle Datum in der Feuerwerkszeit liegt
- * Feuerwerkszeit: 31. Dezember bis 2. Januar
+ * Feuerwerkszeit: 31. Dezember und 1. Januar
  */
 export function isFireworksSeason(): boolean {
   const now = new Date();
   const month = now.getMonth(); // 0-11
   const day = now.getDate();
   
-  // 31. Dezember ODER 1.-2. Januar
-  return (month === 11 && day === 31) || (month === 0 && day <= 2);
+  // 31. Dezember ODER 1. Januar
+  return (month === 11 && day === 31) || (month === 0 && day === 1);
 }
 
 export type SeasonalOrnament = 'christmas' | 'newyear' | 'easter' | null;
