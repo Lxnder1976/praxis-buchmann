@@ -11,7 +11,7 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
   
   return (
-    <nav className="flex justify-center items-center gap-2 mt-12" aria-label="Blog-Seiten Navigation">
+    <nav className="flex justify-center items-center gap-2 mt-12 pb-24 md:pb-0" aria-label="Blog-Seiten Navigation">
       {/* Zurück-Button */}
       {currentPage > 1 ? (
         <Link
